@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
    <url>
-      <loc>https://www.amigautier.work/</loc>
+      <loc>https://www.amigautier.github.io/</loc>
    </url>
    <url>
-      <loc>https://www.amigautier.work/atmospheric</loc>
+      <loc>https://www.amigautier.github.io/atmospheric</loc>
    </url>
    <url>
-      <loc>https://www.amigautier.work/editorial</loc>
+      <loc>https://www.amigautier.github.io/editorial</loc>
    </url>
       <url>
-      <loc>https://www.amigautier.work/product</loc>
+      <loc>https://www.amigautier.github.io/product</loc>
    </url>
    <url>
-      <loc>https://www.amigautier.work/about</loc>
+      <loc>https://www.amigautier.github.io/about</loc>
    </url>
    <url>
-      <loc>https://www.amigautier.work/contact</loc>
+      <loc>https://www.amigautier.github.io/contact</loc>
    </url>
 </urlset>
