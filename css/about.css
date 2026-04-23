@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Diseño en modo dispositivo*/
+
+.contenedorartistas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 65px;
+}
+
+.imagenartistas {
+  position: relative;
+  max-height: 90vh;
+  overflow: hidden;
+  width: 100%;
+}
+
+.imagenartistas img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.tituloartista {
+  position: absolute;
+  width: 250px;
+  top: 0;
+  left: 10px;
+  color: white;
+}
+
+.txtartistas {
+  width: 95%;
+  text-align: justify;
+  margin: 3%;
+}
+
+.txtartistas h2 {
+  font-family: Laika;
+  font-size: 35px;
+  color: rgb(52, 52, 53);
+  text-align: center;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: normal;
+  margin-bottom: 25px;
+  margin-top: 15px;
+}
+
+.txtartistas p {
+  font-family: NewQueen;
+  font-size: 15px;
+  color: rgb(52, 52, 53);
+}
+
+.txtartistascotenido {
+  margin: auto;
+  max-width: 600px;
+  padding-top: 4%;
+  padding-bottom: 8%;
+  padding-left: 25px;
+  padding-right: 25px;
+  color: rgb(52, 52, 53);
+}
+
+.textocontactoartista {
+  font-family: NewQueen;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.textocontactoartista a {
+  font-family: NewQueen;
+  text-decoration: none;
+  color: rgb(67, 67, 67);
+  font-size: 16px;
+}
+
+.textocontactoartista p {
+  font-family: NewQueen;
+  letter-spacing: 0.7px;
+  padding-top: 3%;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+@media (max-width: 315px) {
+  .contenedorartistas {
+    min-width: 270px;
+  }
+
+  .textocontactoartista p {
+    font-size: 14px;
+  }
+
+  .textocontactoartista a {
+    font-size: 12px;
+  }
+}
+
+/*Diseño en modo pc*/
+
+@media screen and (min-width: 1050px) {
+  header {
+    background: rgba(255, 255, 255, 0);
+  }
+
+  .contenedorartistas {
+    flex-direction: row;
+    margin-top: 0px;
+    max-height: 100vh;
+  }
+
+  .imagenartistas {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 50vw;
+    max-height: 100vh;
+    overflow: hidden;
+    z-index: -1;
+  }
+
+  .imagenartistas img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 0;
+    position: relative; /* Añadido */
+    top: -90px; /* Añadido */
+  }
+
+  .txtartistas {
+    width: 50vw;
+    height: 100%;
+    margin: auto;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: justify;
+    overflow-x: hidden;
+    background-color: rgba(244, 246, 247, 0);
+    box-shadow: none;
+  }
+
+  .txtartistas h2 {
+    text-align: left;
+  }
+
+  .txtartistas p {
+    letter-spacing: 0.7px;
+  }
+}

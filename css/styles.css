@@ -1,0 +1,32 @@
+@import url(menu.css);
+@import url(header.css);
+@import url(main_index.css);
+@import url(footer.css);
+
+@font-face {
+    font-family: "ParisLPA";
+    src: url("../fonts/FeniceStd-Regular.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Vinete-MT";
+    src: url("../fonts/BodoniMT.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Laika";
+    src: url("../fonts/DidotRoman.woff") format("woff");
+}
+
+@font-face {
+    font-family: "NewQueen";
+    src: url("../fonts/RockwellNova.woff") format("woff");
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}

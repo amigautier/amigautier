@@ -1,0 +1,228 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Comienzo grid scroll fotos 2*/
+
+.carrusel_scroll {
+  background-color: rgb(255, 255, 255);
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 0px;
+  padding-left: 15px;
+  margin-top: 60px;
+  width: 96, 5vw;
+}
+
+.cont_carrusel_scroll {
+  width: 100%;
+  height: 73vh;
+  display: flex;
+  overflow: scroll;
+  overflow-y: hidden;
+  list-style: none;
+  gap: 10px;
+}
+
+.cont_carrusel_scroll img {
+  padding-top: 50px;
+  max-width: 470px;
+  height: 100%;
+  object-fit: cover;
+  padding-bottom: 20px;
+  cursor: pointer;
+}
+
+.cont_carrusel_scroll h2 {
+  color: rgb(173, 172, 172);
+  font-size: 0.9em;
+  font-weight: 400;
+  letter-spacing: 1px;
+  position: absolute;
+  height: 30px;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.cont_carrusel_scroll::-webkit-scrollbar {
+  height: 7px;
+  background-color: rgb(226, 226, 226);
+  border-radius: 15px;
+}
+
+.cont_carrusel_scroll::-webkit-scrollbar-thumb {
+  background-color: rgb(29, 74, 136);
+  border-radius: 15px;
+}
+
+.textocarrusel{
+  margin-left: 10px;
+}
+
+.textocarrusel h2 {
+  color: rgb(32, 32, 32);
+  font-family: Laika;
+  font-size: 40px;
+  letter-spacing: 3px;
+  
+}
+
+.textocarrusel p {
+  color: rgb(151, 148, 148);
+  font-family: NewQueen;
+  font-size: 16px;
+  letter-spacing: 3px;
+  padding-left: 5px;
+  padding-top: 3px;
+}
+
+/*Fin grid fotos 2*/
+
+/*Comienzo Lightbox*/
+
+#lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.925);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+#contenedor-lightbox {
+  width: 100%;
+  padding: 2px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+#contenedor-lightbox img {
+  width: 100%;
+  height: auto;
+}
+
+button {
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  color: #f3f3f3;
+}
+
+#btn-cierra,
+#btn-retrocede,
+#btn-adelanta {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.295);
+  color: black;
+  border-radius: 50px;
+  font-size: 1.7rem;
+  top: 50%;
+  right: 10px;
+  z-index: 101;
+}
+
+#btn-cierra {
+  top: 10px;
+}
+
+#btn-retrocede {
+  left: 10px;
+}
+
+.slider {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  bottom: 15px;
+  list-style: none;
+}
+
+.slider input[type="radio"] {
+  display: none;
+}
+
+.slider input[type="radio"]+label {
+  position: relative;
+  z-index: 50;
+  margin: 10px;
+  display: block;
+  width: 40px;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.295);
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.slider input[type="radio"]:checked+label {
+  background: rgb(27, 179, 133);
+}
+
+/*Fin Lightbox*/
+
+@media (max-width: 315px) {
+  #btn-cierra,
+  #btn-retrocede,
+  #btn-adelanta {
+    width: 40px;
+    height: 40px;
+    font-size: 1.4rem;
+  }
+}
+
+@media (min-width: 1400px) {
+    #contenedor-lightbox {
+      max-width: 1920px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+/*Lightbox modo pc*/
+@media (min-width: 1050px){
+  #email_txt{
+    display: block;
+  }
+}
+
+@media screen and (min-width: 660px) {
+  .carrusel_scroll {
+    margin-top: 120px;
+  }
+
+  .redes_sociales1 p, .redes_sociales1 #ico-gmail, .redes_sociales a {
+    display: block;
+  }
+
+  .textocarrusel{
+    margin-left: 50px;
+  }
+
+  .textocarrusel h2 {
+    font-size: 40px;    
+  }
+  
+  .textocarrusel p {
+    font-size: 16px;
+    padding-left: 10px;
+  }
+
+  /*Comienzo Ligthbox*/
+  #contenedor-lightbox img {
+    width: auto;
+    height: 90vh;
+  }
+
+  /*Fin Lightbox*/
+}

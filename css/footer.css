@@ -1,0 +1,226 @@
+/*Device mode*/
+footer {
+  font-weight: 600;
+  font-style: normal;
+  background: #ffffff;
+  color: #2b2c2c;
+  position: relative;
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+footer .contenedorfooter {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+footer .contenedorfooter .redessociales {
+  justify-self: center;
+  width: 100%;
+  border-top: 1px solid rgb(179, 179, 179);
+  border-bottom: 1px solid rgb(179, 179, 179);
+  padding-left: 20px;
+  padding-top: 25px;
+  padding-bottom: 35px;
+}
+
+footer .contenedorfooter .redessociales h3 {
+  font-family: Laika;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  letter-spacing: 1px;
+  padding-bottom: 15px;
+}
+
+footer .contenedorfooter .redessociales {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+footer .contenedorfooter .redessociales p {
+  font-size: 18px;
+  padding-top: 8px;
+  letter-spacing: 1.5px;
+  padding-bottom: 13px;
+}
+
+footer .contenedorfooter .redessociales a {
+  font-family: ParisLPA;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  text-decoration: none;
+  color: #2b2c2c;
+}
+
+footer .contenedorfooter .redessociales #WhatsApp {
+  font-size: 16px;
+}
+
+footer .contenedorfooter .feedinstagram {
+  grid-column: 1/3;
+  width: 100%;
+  justify-self: center;
+  padding-left: 20px;
+  padding-bottom: 35px;
+  border-bottom: 1px solid rgb(179, 179, 179);
+}
+
+footer .contenedorfooter .feedinstagram img {
+  width: 250px;
+  border-radius: 15px;
+}
+
+footer .contenedorfooter .feedinstagram h2 {
+  font-family: Laika;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  letter-spacing: 1px;
+  margin-top: -20px;
+  padding-bottom: 15px;
+}
+
+footer .contenedorfooter .logotipofooter {
+  display: flex;
+  flex-direction: column;
+  font-family: Vinete-MT;
+  text-align: left;
+  border-bottom: 1px solid rgb(179, 179, 179);
+  padding-left: 20px;
+  padding-bottom: 30px;
+}
+
+footer .contenedorfooter .imageAG {
+  margin-top: -20px;
+  margin-bottom: 10px;
+}
+
+footer .contenedorfooter .imageAG img {
+  width: 30px;
+  height: auto;
+}
+
+footer .contenedorfooter .logotipofooter a {
+  text-decoration: none;
+  font-family: ParisLPA;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  color: #2b2c2c;
+  margin-bottom: 15px;
+}
+
+footer .copyright {
+  display: flex;
+}
+
+footer .copyright p {
+  font-family: ParisLPA;
+  font-style: normal;
+  font-weight: normal;
+  margin: auto;
+  font-size: 13px;
+  letter-spacing: 1.5px;
+  margin-top: 40px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+/*Footer mode for very small device*/
+@media (max-width: 315px) {
+  footer {
+    min-width: 270px;
+  }
+
+  footer .copyright p {
+    text-align: center;
+  }
+}
+
+/*Pc Mode*/
+@media (min-width: 700px) {
+  footer {
+    padding: 60px;
+    padding-bottom: 20px;
+  }
+
+  footer .contenedorfooter {
+    flex-direction: row;
+    gap: 15px;
+    justify-content: center;
+    border-bottom: 1px solid rgb(218, 218, 218);
+    border-top: 1px solid rgb(218, 218, 218);
+    padding-bottom: 25px;
+    padding-top: 25px;
+    margin-bottom: 50px;
+    width: 100%;
+  }
+
+  footer .contenedorfooter .redessociales {
+    border-top: none;
+    border-bottom: none;
+    border-right: 1px solid rgb(218, 218, 218);
+    width: 300px;
+  }
+
+  footer .contenedorfooter .redessociales p {
+    font-size: 17px;
+  }
+
+  footer .contenedorfooter .redessociales a {
+    font-size: 13px;
+  }
+
+  footer .contenedorfooter .redessociales h3 {
+    font-size: 16px;
+  }
+
+  footer .contenedorfooter .redessociales #WhatsApp {
+    font-size: 15px;
+  }
+
+  footer .contenedorfooter .feedinstagram {
+    padding-left: 15px;
+    padding-right: 20px;
+    border-bottom: none;
+    border-right: 1px solid rgb(218, 218, 218);
+    width: 300px;
+  }
+
+  footer .contenedorfooter .feedinstagram h2 {
+    font-size: 16px;
+    padding-top: 20px;
+    margin-top: 0px;
+  }
+
+  footer .contenedorfooter .imageAG {
+    margin-top: 18px;
+    margin-bottom: -7px;
+  }
+
+  footer .contenedorfooter .logotipofooter {
+    border-bottom: none;
+    text-align: left;
+    width: 300px;
+  }
+
+  footer .contenedorfooter .logotipofooter a {
+    font-size: 14px;
+  }
+
+  footer .contenedorfooter .logotipofooter #logotipofooter_about {
+    padding-top: 20px;
+  }
+
+  footer .copyright {
+    border-top: 1px solid rgb(218, 218, 218);
+    margin-top: 20px;
+  }
+}

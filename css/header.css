@@ -1,0 +1,128 @@
+/*Device Mode*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Noto Sans", sans-serif;
+  user-select: none;
+}
+
+header {
+  display: flex;
+  width: 100%;
+  height: 65px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background: rgb(255, 255, 255);
+  transition:
+    transform 0.8s ease,
+    background 0.5s ease
+}
+
+header.hide-header {
+  transform: translateY(-100%);
+  background: rgba(255,255,255,0);
+}
+
+header .redes_sociales a,
+header .redes_sociales1 #ico-gmail {
+  display: block;
+  color: rgb(41, 41, 43);
+}
+
+header .redes_sociales1 #email_txt {
+  display: none;
+}
+
+header .redes_sociales a:hover {
+  color: rgb(8, 91, 158);
+}
+
+header:hover .redes_sociales1 .textohover_email p {
+  color: rgb(255, 255, 255);
+}
+
+header .contenedor {
+  width: 98%;
+  margin: auto;
+  display: table;
+  position: relative;
+}
+
+.contenedor .centrarlogotipo {
+  display: block;
+  width: 98%;
+  margin: auto;
+  text-align: center;
+}
+
+.centrarlogotipo .logotipo {
+  position: relative;
+  z-index: 101;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 2px;
+  width: 180px;
+  height: auto;
+}
+
+
+@media (max-width: 315px) {
+  header .contenedor {
+    min-width: 270px;
+  }
+
+  .centrarlogotipo .logotipo {
+    width: 150px;
+    height: auto;
+  }
+}
+
+/*Pc Mode*/
+@media (min-width: 1400px) {
+  header .contenedor {
+    max-width: 1650px;
+  }
+}
+
+@media (min-width: 1050px) {
+  header {
+    height: auto;
+  }
+
+  .contenedor .centrarlogotipo {
+    display: block;
+    width: 100%;
+    padding-bottom: 5px;
+    margin-right: 15px;
+  }
+
+  .contenedor .centrarlogotipo {
+    border-bottom: 1px solid rgb(41, 41, 43);
+  }
+
+  .centrarlogotipo .logotipo {
+    width: 250px;
+    height: auto;
+    margin-left: auto;
+    margin-top: 10px;
+    margin-bottom: 0px;
+  }
+
+  header .redes_sociales1 #email_txt {
+    display: block;
+    color: rgb(41, 41, 43);
+  }
+}
+
+@media screen and (max-width: 310px) {
+  .contenedor {
+    min-width: 310px;
+  }
+}
