@@ -155,8 +155,8 @@ footer .copyright p {
     flex-direction: row;
     gap: 15px;
     justify-content: center;
-    border-bottom: 1px solid rgb(218, 218, 218);
-    border-top: 1px solid rgb(218, 218, 218);
+    border-bottom: 1px solid #94897c;
+    border-top: 1px solid #94897c;
     padding-bottom: 25px;
     padding-top: 25px;
     margin-bottom: 50px;
@@ -166,7 +166,7 @@ footer .copyright p {
   footer .contenedorfooter .redessociales {
     border-top: none;
     border-bottom: none;
-    border-right: 1px solid rgb(218, 218, 218);
+    border-right: 1px solid #94897c;
     width: 300px;
   }
 
@@ -190,7 +190,7 @@ footer .copyright p {
     padding-left: 15px;
     padding-right: 20px;
     border-bottom: none;
-    border-right: 1px solid rgb(218, 218, 218);
+    border-right: 1px solid #94897c;
     width: 300px;
   }
 
@@ -220,7 +220,7 @@ footer .copyright p {
   }
 
   footer .copyright {
-    border-top: 1px solid rgb(218, 218, 218);
+    border-top: 1px solid #94897c;
     margin-top: 20px;
   }
 }

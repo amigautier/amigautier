@@ -4,6 +4,9 @@
   box-sizing: border-box;
 }
 
+header:hover {
+  background-color: white;
+}
 /*Diseño en modo dispositivo*/
 
 .contenedorartistas {

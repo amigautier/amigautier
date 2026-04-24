@@ -19,7 +19,7 @@ header {
   top: 0;
   left: 0;
   z-index: 100;
-  background: rgb(255, 255, 255);
+  background: #ffffff;
   transition:
     transform 0.8s ease,
     background 0.5s ease
