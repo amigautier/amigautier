@@ -42,7 +42,7 @@
   margin-top: 40px;
   margin-bottom: 80px;
   font-size: 45px;
-  color: #ffedb7;
+  color: #fff1c7;
 }
 
 .titulo_seccion_tarjetas .my,
@@ -60,7 +60,7 @@
   transform: translateX(-50%);
   width: 180px;
   height: 1px;
-  background: #ffedb7;
+  background: #fff1c7;
 }
 
 .titulo_seccion_tarjetas .my::before {
