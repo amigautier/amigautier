@@ -357,15 +357,14 @@ ul.show {
     color: rgb(41, 41, 43);
   }
 
-  .menu .submenuitem:hover {
-    color: rgb(133, 134, 138);
-    border-bottom: 1px solid rgba(179, 179, 179);
-  }
-
   .menu .menuitems {
     list-style: none;
     width: 100%;
     overflow: hidden;
+  }
+
+  .menu a:hover {
+    border-bottom: none;
   }
 
   /*Redes sociales*/
@@ -391,7 +390,7 @@ ul.show {
     display: none;
   }
 
-  .redes_sociales1 .textohover_email{
+  .redes_sociales1 .textohover_email {
     display: none;
   }
 
@@ -414,7 +413,6 @@ ul.show {
     align-items: center;
     width: 80%;
     height: 100%;
-    border-top: 1px solid rgb(224, 224, 224);
     padding-top: 20%;
   }
 
