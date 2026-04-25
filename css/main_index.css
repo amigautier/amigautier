@@ -36,6 +36,11 @@ header .redes_sociales1 #ico-gmail {
 header.headerscroll .redes_sociales1 #ico-gmail {
   display: block;
 }
+.menu a:hover {
+  color: rgb(41, 41, 43);
+  border-bottom: none;
+}
+
 /*Device Mode*/
 
 /*Banner*/
@@ -251,6 +256,10 @@ header.headerscroll .redes_sociales1 #ico-gmail {
   header:hover .redes_sociales1 #email_txt,
   header:hover .redes_sociales1 #ico-gmail {
     display: block;
+  }
+
+  .menu a:hover {
+    border-bottom: 2px solid rgb(32, 32, 32);
   }
 }
 
