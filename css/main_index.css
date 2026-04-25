@@ -31,6 +31,7 @@ header.headerscroll .contenedormenu {
 }
 header .redes_sociales1 #ico-gmail {
   display: none;
+  color: rgb(41, 41, 43);
 }
 header.headerscroll .redes_sociales1 #ico-gmail {
   display: block;
