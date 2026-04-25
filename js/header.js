@@ -26,31 +26,3 @@ noscroll.addEventListener('click', () => {
 
     document.body.classList.toggle('noscroll');
 });
-
-//Ocultar Header
-const header = document.querySelector("header");
-
-let lastScroll = 0;
-
-window.addEventListener("scroll", () => {
-  let currentScroll = window.pageYOffset;
-
-  // Siempre visible arriba del todo
-  if (currentScroll <= 0) {
-    header.classList.remove("hide-header");
-    lastScroll = 0;
-    return;
-  }
-
-  // Scroll hacia abajo = ocultar
-  if (currentScroll > lastScroll) {
-    header.classList.add("hide-header");
-  }
-
-  // Scroll hacia arriba = mostrar
-  else {
-    header.classList.remove("hide-header");
-  }
-
-  lastScroll = currentScroll;
-});

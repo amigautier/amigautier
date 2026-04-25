@@ -18,7 +18,6 @@
 .banner_main .image_banner {
   width: 100%;
   height: 100%;
-  margin-top: 30px;
 }
 
 .banner_main .image_banner img {
@@ -35,12 +34,13 @@
   padding: 20px;
   background-color: #787e78;
   text-align: center;
+  justify-items: center;
 }
 
 .titulo_seccion_tarjetas {
   font-family: NewQueen;
-  margin-top: 40px;
-  margin-bottom: 80px;
+  margin-top: 80px;
+  margin-bottom: 90px;
   font-size: 45px;
   color: #fff1c7;
 }
@@ -134,7 +134,22 @@
   color: #ffe28b;
 }
 
+@media (max-width: 315px) {
+  .banner_main {
+    min-width: 270px;
+  }
+  .seccion-tarjetas {
+    min-width: 270px;
+  }
+}
+
 /*Pc Mode*/
+@media (min-width: 1400px) {
+  .contenedor-tarjetas {
+    max-width: 1650px;
+  }
+}
+
 @media (min-width: 760px) {
   /*Tarjetas*/
   .contenedor-tarjetas {
@@ -162,9 +177,5 @@
 
   .image_banner img {
     object-position: center top;
-  }
-
-  .banner_main .image_banner {
-    margin-top: 65px;
   }
 }

@@ -60,7 +60,7 @@ body.noscroll {
   display: flex;
   justify-content: center;
   list-style: none;
-  height: 53px;
+  max-height: 53px;
   margin-bottom: 5px;
 }
 
@@ -148,12 +148,14 @@ body.noscroll {
 }
 
 /*Social networks*/
+
 .redes_sociales {
   display: flex;
   flex-direction: row;
   position: absolute;
   left: 0;
   width: 70px;
+  height: 53px;
   gap: 15px;
   margin-left: 15px;
 }
@@ -268,6 +270,7 @@ ul.show {
     top: 65px;
     right: 0;
     left: 0;
+    max-height: 100%;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -381,23 +384,5 @@ ul.show {
     color: rgb(41, 41, 43);
     border-bottom: none;
     height: auto;
-  }
-}
-
-/*fix size on rotated tablet*/
-@media screen and (max-height: 480px) {
-  .menu {
-    height: 110vh;
-  }
-
-  .contenedor_redes_sociales {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 858px) and (orientation: landscape) {
-  .menu {
-    overflow: scroll;
-    height: calc(100% - 65px);
   }
 }

@@ -1,0 +1,26 @@
+//Ocultar Header
+document.addEventListener("DOMContentLoaded", () => {
+  const header = document.querySelector("header");
+  const banner = document.querySelector("#banner");
+
+  let lastScroll = window.scrollY;
+
+  window.addEventListener("scroll", () => {
+    const currentScroll = window.scrollY;
+
+    const bannerBottom = banner.getBoundingClientRect().bottom;
+    const headerBottom = header.getBoundingClientRect().bottom;
+
+    // Ocultar cuando el header cruza el banner
+    if (headerBottom >= bannerBottom) {
+      header.classList.add("hide-header");
+    }
+
+    // Mostrar siempre que el usuario haga scroll hacia arriba
+    if (currentScroll < lastScroll) {
+      header.classList.remove("hide-header");
+    }
+
+    lastScroll = currentScroll;
+  });
+});

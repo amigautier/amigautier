@@ -4,6 +4,27 @@
   box-sizing: border-box;
 }
 
+/*Arreglo header*/
+header {
+  background: #ffffff;
+  transition:
+    transform 0.8s ease,
+    background 0.5s ease;
+}
+
+header .logotipo {
+  filter: invert();
+}
+
+header .redes_sociales a,
+header .redes_sociales1 #ico-gmail {
+  display: block;
+}
+
+header .menu .submenuitem {
+  opacity: 100%;
+}
+
 /*Comienzo grid scroll fotos 2*/
 
 .carrusel_scroll {
@@ -59,7 +80,7 @@
   border-radius: 15px;
 }
 
-.textocarrusel{
+.textocarrusel {
   margin-left: 10px;
 }
 
@@ -68,7 +89,6 @@
   font-family: Laika;
   font-size: 40px;
   letter-spacing: 3px;
-  
 }
 
 .textocarrusel p {
@@ -153,7 +173,7 @@ button {
   display: none;
 }
 
-.slider input[type="radio"]+label {
+.slider input[type="radio"] + label {
   position: relative;
   z-index: 50;
   margin: 10px;
@@ -165,7 +185,7 @@ button {
   border-radius: 20px;
 }
 
-.slider input[type="radio"]:checked+label {
+.slider input[type="radio"]:checked + label {
   background: rgb(27, 179, 133);
 }
 
@@ -182,18 +202,25 @@ button {
 }
 
 @media (min-width: 1400px) {
-    #contenedor-lightbox {
-      max-width: 1920px;
-      margin-left: auto;
-      margin-right: auto;
-    }
+  #contenedor-lightbox {
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
   }
+}
 
 /*Lightbox modo pc*/
-@media (min-width: 1050px){
-  #email_txt{
+@media (min-width: 1050px) {
+  /*Arreglo header*/
+  header .contenedor .centrarlogotipo {
+    border-bottom: 1px solid rgb(41, 41, 43);
+  }
+
+  header .redes_sociales1 #email_txt {
     display: block;
   }
+
+  /*Fin header*/
 }
 
 @media screen and (min-width: 660px) {
@@ -201,18 +228,20 @@ button {
     margin-top: 120px;
   }
 
-  .redes_sociales1 p, .redes_sociales1 #ico-gmail, .redes_sociales a {
+  .redes_sociales1 p,
+  .redes_sociales1 #ico-gmail,
+  .redes_sociales a {
     display: block;
   }
 
-  .textocarrusel{
+  .textocarrusel {
     margin-left: 50px;
   }
 
   .textocarrusel h2 {
-    font-size: 40px;    
+    font-size: 40px;
   }
-  
+
   .textocarrusel p {
     font-size: 16px;
     padding-left: 10px;

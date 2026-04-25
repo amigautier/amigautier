@@ -1,117 +1,133 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    background-color: rgb(232, 236, 235);
+body {
+  background-color: rgb(232, 236, 235);
+}
+
+/*Arreglo header*/
+header {
+  background: #ffffff;
+  transition:
+    transform 0.8s ease,
+    background 0.5s ease;
+}
+
+header .logotipo {
+  filter: invert();
+}
+
+header .redes_sociales a,
+header .redes_sociales1 #ico-gmail {
+  display: block;
+}
+
+header .menu .submenuitem {
+  opacity: 100%;
 }
 
 /*Comienzo contacto modo dispositivo*/
 
 /*Texto contacto y mapa modo celular*/
-.contacto{
-    width: 100%;
-    height: 80vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.contacto {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .contacto .gridcontacto {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    overflow: hidden;
-    width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+  width: 100%;
+}
+
+.contacto .gridcontacto .centrarcontacto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.contacto .gridcontacto .centrarcontacto .textocontacto {
+  text-align: justify;
+  width: 94%;
+  max-width: 500px;
+  border-radius: 35px;
+  color: rgb(52, 53, 54);
+  margin: 3%;
+  padding-top: 4%;
+  padding-bottom: 8%;
+}
+
+.textocontacto h1 {
+  font-family: Laika;
+  font-size: 30px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: normal;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.textocontacto a {
+  font-family: NewQueen;
+  font-size: 15px;
+  text-decoration: none;
+  color: rgb(67, 67, 67);
+}
+
+.textocontacto p {
+  margin-top: 10px;
+  text-align: center;
+  padding-top: 10px;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+/*Fin contacto modo dispositivo*/
+
+/*Texto y mapa modo pc*/
+@media (max-width: 315px) {
+  .contacto {
+    min-width: 270px;
   }
-  
-  .contacto .gridcontacto .centrarcontacto {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-  }
-  
   .contacto .gridcontacto .centrarcontacto .textocontacto {
-    text-align: justify;
-    width: 94%;
-    max-width: 500px;
-    border-radius: 35px;
-    color: rgb(52, 53, 54);
-    margin: 3%;
-    padding-top: 4%;
-    padding-bottom: 8%;
+    width: 100%;
   }
-  
-  .textocontacto h1 {
-    font-family: Laika;
-    font-size: 30px;
-    letter-spacing: 4px;
-    text-transform: uppercase;
-    font-style: normal;
-    font-weight: normal;
-    text-align: center;
-    padding-top: 30px;
-  }
-  
   .textocontacto a {
-    font-family: NewQueen;
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 1050px) {
+  /*Arreglo header*/
+  header .contenedor .centrarlogotipo {
+    border-bottom: 1px solid rgb(41, 41, 43);
+  }
+
+  header .redes_sociales1 #email_txt {
+    display: block;
+  }
+
+  /*Fin header*/
+
+  .contacto .gridcontacto .centrarcontacto .textocontacto {
+    margin: 0;
+    width: 280px;
+    box-shadow: none;
+  }
+
+  .textocontacto #whatsuno {
     font-size: 15px;
-    text-decoration: none;
-    color: rgb(67, 67, 67);
   }
-  
-  .textocontacto p {
-    margin-top: 10px;
-    text-align: center;
-    padding-top: 10px;
-    font-size: 16px;
-    line-height: 1.4;
-  }
-
-  /*Fin contacto modo dispositivo*/
-  
-  /*Texto y mapa modo pc*/
-  @media (max-width: 315px) {
-    .contacto {
-      min-width: 270px;
-    }
-    .contacto .gridcontacto .centrarcontacto .textocontacto {
-      width: 100%;
-    }
-    .textocontacto a {
-      font-size: 12px;
-    }
-  }
-  
-  @media screen and (min-width: 1050px) {
-
-    #email_txt{
-      display: block;
-    }
-
-    header .contenedor .centrarlogotipo {
-      border-bottom: 1px solid rgb(228, 228, 228);
-    }
-
-    .redes_sociales1 p, .redes_sociales1 #ico-gmail, .redes_sociales a {
-      display: block;
-    }
-  
-  
-    .contacto .gridcontacto .centrarcontacto .textocontacto {
-      margin: 0;
-      width: 280px;
-      box-shadow: none;
-    }
-
-    .textocontacto #whatsuno{
-        font-size: 15px;
-    }
-
-  }
-
+}

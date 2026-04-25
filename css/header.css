@@ -19,25 +19,42 @@ header {
   top: 0;
   left: 0;
   z-index: 100;
-  background: #ffffff;
-  transition:
-    transform 0.8s ease,
-    background 0.5s ease
 }
 
 header.hide-header {
   transform: translateY(-100%);
-  background: rgba(255,255,255,0);
+  background: rgba(255, 255, 255, 0);
+}
+
+header.headerscroll {
+  background: #ffffff;
+  transition:
+    transform 0.8s ease,
+    background 0.5s ease;
+}
+
+header.headerscroll .logotipo {
+  filter: invert();
 }
 
 header .redes_sociales a,
-header .redes_sociales1 #ico-gmail {
-  display: block;
+header .redes_sociales1 #ico-gmail,
+header .redes_sociales1 #email_txt {
+  display: none;
   color: rgb(41, 41, 43);
 }
 
-header .redes_sociales1 #email_txt {
-  display: none;
+header.headerscroll .redes_sociales a,
+header.headerscroll .redes_sociales1 #ico-gmail{
+  display: block;
+}
+
+header .menu .submenuitem{
+  opacity: 0;
+}
+
+header.headerscroll .menu .submenuitem {
+  opacity: 100%;
 }
 
 header .redes_sociales a:hover {
@@ -72,7 +89,6 @@ header .contenedor {
   height: auto;
 }
 
-
 @media (max-width: 315px) {
   header .contenedor {
     min-width: 270px;
@@ -93,7 +109,7 @@ header .contenedor {
 
 @media (min-width: 1050px) {
   header {
-    height: auto;
+    height: 118px;
   }
 
   .contenedor .centrarlogotipo {
@@ -103,7 +119,7 @@ header .contenedor {
     margin-right: 15px;
   }
 
-  .contenedor .centrarlogotipo {
+  header.headerscroll .contenedor .centrarlogotipo {
     border-bottom: 1px solid rgb(41, 41, 43);
   }
 
@@ -115,9 +131,8 @@ header .contenedor {
     margin-bottom: 0px;
   }
 
-  header .redes_sociales1 #email_txt {
+  header.headerscroll .redes_sociales1 #email_txt {
     display: block;
-    color: rgb(41, 41, 43);
   }
 }
 
