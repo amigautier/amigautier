@@ -8,27 +8,6 @@ body {
   background-color: rgb(232, 236, 235);
 }
 
-/*Arreglo header*/
-header {
-  background: #ffffff;
-  transition:
-    transform 0.8s ease,
-    background 0.5s ease;
-}
-
-header .logotipo {
-  filter: invert();
-}
-
-header .redes_sociales a,
-header .redes_sociales1 #ico-gmail {
-  display: block;
-}
-
-header .menu .submenuitem {
-  opacity: 100%;
-}
-
 /*Comienzo contacto modo dispositivo*/
 
 /*Texto contacto y mapa modo celular*/
@@ -110,15 +89,6 @@ header .menu .submenuitem {
 }
 
 @media screen and (min-width: 1050px) {
-  /*Arreglo header*/
-  header .contenedor .centrarlogotipo {
-    border-bottom: 1px solid rgb(41, 41, 43);
-  }
-
-  header .redes_sociales1 #email_txt {
-    display: block;
-  }
-
   /*Fin header*/
 
   .contacto .gridcontacto .centrarcontacto .textocontacto {

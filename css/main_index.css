@@ -6,6 +6,35 @@
   box-sizing: border-box;
 }
 
+/*Arreglo header*/
+header {
+  background: transparent;
+}
+header.headerscroll {
+  background: #ffffff;
+  transition:
+    transform 0.8s ease,
+    background 0.5s ease;
+}
+header .logotipo {
+  filter: invert();
+}
+header.headerscroll .logotipo {
+  filter: none;
+}
+.contenedormenu {
+  display: none;
+}
+
+header.headerscroll .contenedormenu {
+  display: flex;
+}
+header .redes_sociales1 #ico-gmail {
+  display: none;
+}
+header.headerscroll .redes_sociales1 #ico-gmail {
+  display: block;
+}
 /*Device Mode*/
 
 /*Banner*/
@@ -144,12 +173,6 @@
 }
 
 /*Pc Mode*/
-@media (min-width: 1400px) {
-  .contenedor-tarjetas {
-    max-width: 1650px;
-  }
-}
-
 @media (min-width: 760px) {
   /*Tarjetas*/
   .contenedor-tarjetas {
@@ -158,13 +181,6 @@
 
   .tarjeta {
     aspect-ratio: 4 / 4.5;
-  }
-}
-
-@media (min-width: 1300px) {
-  /*Tarjeta*/
-  .tarjeta {
-    aspect-ratio: 4 / 3.5;
   }
 }
 
@@ -177,5 +193,48 @@
 
   .image_banner img {
     object-position: center top;
+  }
+}
+/*Arreglo header*/
+@media (min-width: 1050px) {
+  header .menu .submenuitem {
+    opacity: 0;
+  }
+
+  header.headerscroll .menu .submenuitem {
+    opacity: 100%;
+  }
+
+  header .redes_sociales a,
+  header .redes_sociales1 #ico-gmail,
+  header .redes_sociales1 #email_txt {
+    display: none;
+  }
+
+  header.headerscroll .redes_sociales a,
+  header.headerscroll .redes_sociales1 #ico-gmail,
+  header.headerscroll .redes_sociales1 #email_txt {
+    display: block;
+  }
+
+  header .contenedor .centrarlogotipo {
+  border-bottom: none
+}
+
+  header.headerscroll .contenedor .centrarlogotipo {
+  border-bottom: 1px solid rgb(41, 41, 43);
+}
+}
+
+@media (min-width: 1300px) {
+  /*Tarjeta*/
+  .tarjeta {
+    aspect-ratio: 4 / 3.5;
+  }
+}
+
+@media (min-width: 1400px) {
+  .contenedor-tarjetas {
+    max-width: 1650px;
   }
 }

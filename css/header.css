@@ -1,4 +1,4 @@
-/*Device Mode*/
+/*Pc Mode*/
 * {
   margin: 0;
   padding: 0;
@@ -11,14 +11,23 @@ body {
   user-select: none;
 }
 
+body.noscroll {
+  overflow: scroll;
+}
+
+/*Header modo pc*/
 header {
   display: flex;
   width: 100%;
-  height: 65px;
+  height: 118px;
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 100;
+  z-index: 99;
+  background: #ffffff;
+  transition:
+    transform 0.8s ease,
+    background 0.5s ease;
 }
 
 header.hide-header {
@@ -26,35 +35,11 @@ header.hide-header {
   background: rgba(255, 255, 255, 0);
 }
 
-header.headerscroll {
-  background: #ffffff;
-  transition:
-    transform 0.8s ease,
-    background 0.5s ease;
-}
-
-header.headerscroll .logotipo {
-  filter: invert();
-}
-
 header .redes_sociales a,
-header .redes_sociales1 #ico-gmail,
+header.redes_sociales1 #ico-gmail,
 header .redes_sociales1 #email_txt {
-  display: none;
-  color: rgb(41, 41, 43);
-}
-
-header.headerscroll .redes_sociales a,
-header.headerscroll .redes_sociales1 #ico-gmail{
   display: block;
-}
-
-header .menu .submenuitem{
-  opacity: 0;
-}
-
-header.headerscroll .menu .submenuitem {
-  opacity: 100%;
+  color: rgb(41, 41, 43);
 }
 
 header .redes_sociales a:hover {
@@ -73,20 +58,401 @@ header .contenedor {
 }
 
 .contenedor .centrarlogotipo {
-  display: block;
-  width: 98%;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-bottom: 5px;
   margin: auto;
-  text-align: center;
+  border-bottom: 1px solid rgb(41, 41, 43);
 }
 
 .centrarlogotipo .logotipo {
   position: relative;
   z-index: 101;
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-top: 2px;
-  width: 180px;
+  width: 250px;
   height: auto;
+  margin-top: 10px;
+}
+
+/*Menu button position*/
+.btn_menu {
+  float: right;
+  font-size: 30px;
+  margin: 0px 30px;
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+  display: none;
+}
+
+/*Menu button animation*/
+.contenedormenu {
+  position: absolute;
+  width: 22px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.5s ease-out;
+  z-index: 101;
+  right: 20px;
+}
+
+.linea-1,
+.linea-2,
+.linea-3 {
+  height: 2px;
+  width: 120%;
+  margin: 2.5px 0px;
+  transition: 0.2s ease-out;
+  border-radius: 15px;
+  background-color: rgb(41, 41, 43);
+}
+
+.change .linea-1 {
+  width: 100%;
+  transform: rotateZ(45deg);
+  position: absolute;
+}
+
+.change .linea-2 {
+  opacity: 0;
+}
+
+.change .linea-3 {
+  width: 100%;
+  transform: rotateZ(-45deg);
+  position: absolute;
+}
+
+/*End of menu animation*/
+
+.menu {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  max-height: 53px;
+  margin-bottom: 5px;
+}
+
+.menu .submenuitem {
+  font-family: ParisLPA;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  letter-spacing: 0.5px;
+  text-align: left;
+  display: block;
+  color: rgb(41, 41, 43);
+  height: 53px;
+  text-decoration: none;
+  padding: 15px;
+  padding-top: 14px;
+  padding-right: 15px;
+}
+
+.menu a:hover {
+  height: 56px;
+  border-bottom: 2px solid rgb(32, 32, 32);
+}
+
+/*Social media icons header*/
+.redes_sociales1 {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  /* top: -2px;*/
+  right: 0px;
+  height: 100%;
+  max-height: 55px;
+}
+
+.redes_sociales1 a {
+  display: flex;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-family: ParisLPA;
+  font-size: 14px;
+}
+
+.redes_sociales1 #ico-gmail {
+  font-size: 23px;
+  color: rgb(60, 61, 61);
+  margin-right: 10px;
+}
+
+.redes_sociales1 .email_txt {
+  display: block;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px;
+  color: rgb(60, 61, 61);
+  margin-bottom: 2px;
+  display: none;
+  cursor: pointer;
+  width: 42px;
+}
+
+.redes_sociales1 #email_txt:hover + .textohover_email {
+  opacity: 1;
+  transition: opacity 0.8s;
+}
+
+.textohover_email {
+  background-color: black;
+  width: 180px;
+  height: 35px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 0px;
+  top: -25px;
+  transition: 0.8s;
+  opacity: 0;
+}
+
+.redes_sociales1 .textohover_email p {
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px;
+}
+
+/*Social networks*/
+
+.redes_sociales {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  left: 0;
+  width: 70px;
+  height: 53px;
+  gap: 15px;
+  margin-left: 15px;
+}
+
+.redes_sociales a {
+  font-size: 16px;
+  text-decoration: none;
+  color: rgb(60, 61, 61);
+  border-bottom: none;
+  margin-top: 15px;
+  display: none;
+}
+
+.redes_sociales .icofont-behance {
+  font-size: 20px;
+  margin-top: 13px;
+}
+
+.textohover_instagram,
+.textohover_behance {
+  background-color: black;
+  width: 180px;
+  height: 35px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px;
+  position: absolute;
+  top: -30px;
+  left: 15px;
+  transition: 0.8s;
+  opacity: 0;
+}
+
+.textohover_behance {
+  left: 0px;
+}
+
+.icofont-instagram:hover + .textohover_instagram,
+.icofont-behance:hover + .textohover_behance,
+#ico-gmail:hover + .textohover_email,
+#email_txt:hover + .textohover_email {
+  opacity: 1;
+  transition: opacity 0.8s;
+}
+
+.redes_sociales a:hover {
+  border-bottom: none;
+}
+
+/*To display the menu when calling this class*/
+ul.show {
+  transform: scale(1);
+  opacity: 1;
+}
+
+/*submenu*/
+.menuitems {
+  width: 85px;
+}
+
+/*Device Mode*/
+@media (max-width: 1050px) {
+  /*Header*/
+  header {
+    height: 65px;
+  }
+
+  .contenedor .centrarlogotipo {
+    display: block;
+    width: 98%;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+
+  .centrarlogotipo .logotipo {
+    width: 180px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 2px;
+  }
+
+  /*Menu*/
+  .btn_menu {
+    display: inline-flex;
+    z-index: 100;
+  }
+
+  body.noscroll {
+    overflow: hidden;
+  }
+
+  .menu {
+    position: fixed;
+    top: 65px;
+    right: 0;
+    left: 0;
+    max-height: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    transform: scale(0);
+    transform-origin: top right;
+    padding-top: 50px;
+    transition:
+      transform 0.7s ease,
+      opacity 0.4s ease;
+    overflow-x: hidden;
+    background-color: rgba(244, 245, 246, 0.904);
+    border-top: 1px solid rgb(224, 224, 224);
+    z-index: -3;
+  }
+
+  .menu .submenuitem {
+    margin-right: 10%;
+    margin-left: 9%;
+    padding: 30px;
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 4px;
+    color: rgb(41, 41, 43);
+  }
+
+  .menu .submenuitem:hover {
+    color: rgb(133, 134, 138);
+    border-bottom: 1px solid rgba(179, 179, 179);
+  }
+
+  .menu .menuitems {
+    list-style: none;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  /*Redes sociales*/
+  .redes_sociales1 {
+    right: 47px;
+    z-index: 100;
+    left: 20px;
+    top: -2px;
+  }
+
+  .redes_sociales1 a {
+    font-size: 14px;
+    padding-right: 8px;
+  }
+
+  .redes_sociales1 #ico-gmail {
+    font-size: 21px;
+    display: block;
+    color: rgb(41, 41, 43);
+  }
+
+  header .redes_sociales1 #email_txt {
+    display: none;
+  }
+
+  .redes_sociales1 .textohover_email{
+    display: none;
+  }
+
+  .redes_sociales1 .icofont-ui-call {
+    margin-left: -5px;
+  }
+
+  .contenedor_redes_sociales {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+
+  .contenedor2_redes_sociales {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    height: 100%;
+    border-top: 1px solid rgb(224, 224, 224);
+    padding-top: 20%;
+  }
+
+  .redes_sociales {
+    position: initial;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin-bottom: 40px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgb(90, 89, 89);
+    gap: 0;
+    margin-left: 0px;
+  }
+
+  .redes_sociales a {
+    font-size: 25px;
+    text-decoration: none;
+    color: rgb(60, 61, 61);
+    border-bottom: none;
+    padding: 10px;
+    margin-top: 0;
+  }
+
+  .redes_sociales .icofont-behance {
+    font-size: 30px;
+    margin-top: 0px;
+    margin-bottom: 2px;
+  }
+
+  .contenedor_redes_sociales .redes_sociales a:hover {
+    background-color: none;
+    color: rgb(41, 41, 43);
+    border-bottom: none;
+    height: auto;
+  }
 }
 
 @media (max-width: 315px) {
@@ -100,44 +466,40 @@ header .contenedor {
   }
 }
 
-/*Pc Mode*/
+/*Very small device size*/
+@media screen and (max-width: 310px) {
+  .contenedor {
+    min-width: 310px;
+  }
+
+  .centrarlogotipo_scroll.logotipo {
+    width: 150px;
+  }
+
+  .redes_sociales1 #ico-gmail {
+    margin-left: -15px;
+    margin-right: 5px;
+    font-size: 20px;
+    color: white;
+  }
+
+  .redes_sociales1 {
+    top: -2px;
+  }
+
+  .contenedormenu {
+    right: 5px;
+  }
+}
+
 @media (min-width: 1400px) {
   header .contenedor {
     max-width: 1650px;
   }
 }
 
-@media (min-width: 1050px) {
-  header {
-    height: 118px;
-  }
-
-  .contenedor .centrarlogotipo {
-    display: block;
-    width: 100%;
-    padding-bottom: 5px;
-    margin-right: 15px;
-  }
-
-  header.headerscroll .contenedor .centrarlogotipo {
-    border-bottom: 1px solid rgb(41, 41, 43);
-  }
-
-  .centrarlogotipo .logotipo {
-    width: 250px;
-    height: auto;
-    margin-left: auto;
-    margin-top: 10px;
-    margin-bottom: 0px;
-  }
-
-  header.headerscroll .redes_sociales1 #email_txt {
-    display: block;
-  }
-}
-
-@media screen and (max-width: 310px) {
-  .contenedor {
-    min-width: 310px;
+@media screen and (max-width: 1826px) {
+  .redes_sociales1 {
+    right: 0;
   }
 }
