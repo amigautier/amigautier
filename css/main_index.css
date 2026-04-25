@@ -219,12 +219,38 @@ header.headerscroll .redes_sociales1 #ico-gmail {
   }
 
   header .contenedor .centrarlogotipo {
-  border-bottom: none
-}
+    border-bottom: none;
+  }
 
   header.headerscroll .contenedor .centrarlogotipo {
-  border-bottom: 1px solid rgb(41, 41, 43);
-}
+    border-bottom: 1px solid rgb(41, 41, 43);
+  }
+
+  header:hover {
+    background: #ffffff;
+    transition:
+      transform 0.8s ease,
+      background 0.5s ease;
+  }
+
+  header:hover .logotipo {
+    filter: none;
+  }
+
+  header:hover .contenedor .centrarlogotipo {
+    border-bottom: 1px solid rgb(41, 41, 43);
+  }
+
+  header:hover .menu .submenuitem {
+    opacity: 100%;
+  }
+
+  header:hover .redes_sociales a,
+  header:hover .redes_sociales1 #ico-gmail,
+  header:hover .redes_sociales1 #email_txt,
+  header:hover .redes_sociales1 #ico-gmail {
+    display: block;
+  }
 }
 
 @media (min-width: 1300px) {
