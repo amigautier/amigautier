@@ -122,6 +122,31 @@ header .menu .submenuitem {
 /*Diseño en modo pc*/
 
 @media screen and (min-width: 1050px) {
+  /*Arreglo header*/
+   header .contenedor .centrarlogotipo {
+    border-bottom: none;
+  }
+   header:hover .contenedor .centrarlogotipo {
+    border-bottom: 1px solid rgb(41, 41, 43);
+  }
+
+  header .menu .submenuitem {
+    opacity: 0;
+  }
+
+  header:hover .menu .submenuitem {
+    opacity: 100%;
+  }
+
+  header .redes_sociales a {
+    display: none;
+  }
+
+  header:hover .redes_sociales a {
+    display: block;
+  }
+
+  /*Fin arreglo header*/
 
   .contenedorartistas {
     flex-direction: row;
