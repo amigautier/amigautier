@@ -62,7 +62,7 @@ header.headerscroll .redes_sociales1 #ico-gmail {
 .seccion-tarjetas {
   width: 100%;
   padding: 20px;
-  background-color: #787e78;
+  background-color: #616357;
   text-align: center;
   justify-items: center;
   padding-bottom: 100px;
@@ -73,7 +73,7 @@ header.headerscroll .redes_sociales1 #ico-gmail {
   margin-top: 80px;
   margin-bottom: 90px;
   font-size: 45px;
-  color: #fff1c7;
+  color: #ece5c9;
 }
 
 .titulo_seccion_tarjetas .my,
@@ -91,7 +91,7 @@ header.headerscroll .redes_sociales1 #ico-gmail {
   transform: translateX(-50%);
   width: 180px;
   height: 1px;
-  background: #fff1c7;
+  background: #ece5c9;
 }
 
 .titulo_seccion_tarjetas .my::before {
@@ -144,7 +144,7 @@ header.headerscroll .redes_sociales1 #ico-gmail {
 .tarjeta-texto {
   font-family: NewQueen;
   font-size: 30px;
-  color: #ffedb7;
+  color: #ece5c9;
   margin-bottom: 13px;
 }
 

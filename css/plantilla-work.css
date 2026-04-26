@@ -1,0 +1,271 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #111;
+}
+
+/*Mobile Device*/
+
+/* HERO */
+.galeria_porfolio {
+  width: 100%;
+  overflow: hidden;
+  background: #606256;
+}
+
+.seccion-hero {
+  position: relative;
+  width: 100%;
+  height: 45vh;
+  overflow: hidden;
+}
+
+.hero-imagen {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+}
+
+.hero-capa {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.336);
+}
+
+.hero-texto {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 90%;
+  color: #fff;
+}
+
+.hero-titulo {
+  font-family: NewQueen;
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+  color: #ffedb7;
+}
+
+.hero-subtitulo {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #fff9e8;
+}
+
+/* CONTENIDO */
+.seccion-contenido {
+  padding: 50px 0;
+}
+
+.bloque-texto {
+  text-align: center;
+  margin-bottom: 35px;
+  padding: 0 20px;
+}
+
+.texto-superior {
+  font-size: 0.6rem;
+  letter-spacing: 3px;
+  color: #f7f2df;
+}
+
+.titulo-seccion {
+  font-size: 1.1rem;
+  margin: 12px 0;
+  color: #f8e5bc;
+}
+
+.parrafo-seccion {
+  font-size: 0.8rem;
+  color: #ece8d7;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.creditos-seccion {
+  font-size: 0.8em;
+  letter-spacing: 0.5px;
+  color: #d6d3c4;
+}
+/* GALERÍA NUEVA */
+
+.galeria-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 100%;
+  gap: 3px;
+  margin-top: 30px;
+}
+
+.item-galeria {
+  width: 100%;
+  overflow: hidden;
+}
+
+.imagen-grid {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.item-galeria:hover .imagen-grid {
+  transform: scale(1.02);
+}
+
+/* BOTÓN */
+.contenedor-boton {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.boton-back {
+  font-family: NewQueen;
+  display: inline-block;
+  padding: 14px 38px;
+  border: 1px solid #f4e8c9;
+  color: #f4e8c9;
+  text-decoration: none;
+  border-radius: 40px;
+  transition: 0.3s;
+}
+
+.boton-back:hover {
+  background: #7e816e;
+  color: #fff;
+}
+
+/* FOOTER PORTFOLIO */
+
+.footer-portfolio {
+  font-family: NewQueen;
+  width: 100%;
+  margin-top: 70px;
+  text-align: center;
+  padding: 0 20px 30px;
+}
+
+.texto-copyright {
+  font-size: 0.8rem;
+  color: #f4e8c9;
+  margin-bottom: 18px;
+  line-height: 1.5;
+}
+
+.linea-footer {
+  width: 100%;
+  height: 1px;
+  background: #f7f2df;
+  margin-bottom: 25px;
+}
+
+.redes-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+.icono-red {
+  font-size: 1rem;
+  color: #f4e8c9;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.icono-red:hover {
+  transform: translateY(-3px);
+  opacity: 0.7;
+}
+
+/* PC */
+@media (min-width: 1050px) {
+  .seccion-contenido {
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .seccion-hero {
+    height: 65vh;
+  }
+
+  .hero-titulo {
+    font-size: 5rem;
+  }
+
+  .hero-subtitulo {
+    font-size: 1.3rem;
+  }
+
+  .seccion-contenido {
+    padding: 90px 0;
+  }
+
+  .bloque-texto {
+    max-width: 800px;
+    margin: auto;
+    margin-bottom: 60px;
+    padding: 0 20px;
+  }
+
+  .texto-superior {
+    font-size: 0.9rem;
+  }
+
+  .titulo-seccion {
+    font-size: 3rem;
+    margin-bottom: 30px;
+  }
+
+  .parrafo-seccion {
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+  }
+
+  .creditos-seccion {
+    font-size: 0.9em;
+  }
+
+  /* máximo 2 fotos por fila */
+  .galeria-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1px;
+    align-items: start;
+    width: 100%;
+    margin-bottom: 70px;
+  }
+
+  .galeria-grid .imagen-grid-especial {
+    justify-self: center;
+    grid-column: 1 / -1;
+    width: 50%;
+  }
+
+  /*Footer*/
+  .footer-portfolio {
+    margin-top: 90px;
+    padding: 0 40px 40px;
+  }
+
+  .texto-copyright {
+    font-size: 1rem;
+  }
+
+  .icono-red {
+    font-size: 1.7rem;
+  }
+}

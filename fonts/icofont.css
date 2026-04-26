@@ -2,7 +2,7 @@
 * @package IcoFont 
 * @version 1.0.1 
 * @author   
-* @copyright 2023 
+* @copyright 2026 
 * @license - https://icofont.com/license/
 */
 
@@ -33,9 +33,9 @@ url("./fonts/icofont.woff") format("woff");
   -webkit-font-smoothing: antialiased;
 }
 
-.icofont-instagram:before
+.icofont-email:before
 {
-  content: "\ed46";
+  content: "\ef12";
 }
 
 .icofont-behance:before
@@ -43,24 +43,24 @@ url("./fonts/icofont.woff") format("woff");
   content: "\ed22";
 }
 
+.icofont-instagram:before
+{
+  content: "\ed46";
+}
+
 .icofont-brand-whatsapp:before
 {
   content: "\e957";
 }
 
-.icofont-ui-call:before
+.icofont-phone:before
 {
-  content: "\ec46";
+  content: "\efbb";
 }
 
-.icofont-thin-down:before
+.icofont-share:before
 {
-  content: "\eac8";
-}
-
-.icofont-email:before
-{
-  content: "\ef12";
+  content: "\efe5";
 }
 
 [class^="icofont-"].icofont-duotone,

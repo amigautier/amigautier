@@ -75,7 +75,6 @@ body {
 
 /*Fin contacto modo dispositivo*/
 
-/*Texto y mapa modo pc*/
 @media (max-width: 315px) {
   .contacto {
     min-width: 270px;
@@ -88,6 +87,7 @@ body {
   }
 }
 
+/*Texto y mapa modo pc*/
 @media screen and (min-width: 1050px) {
   /*Fin header*/
 
