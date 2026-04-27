@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body{
+  background-color: #efeee9;;
+}
+
 header{
   background: transparent;
 }
@@ -12,7 +16,7 @@ header:hover {
   transition:
     transform 0.8s ease,
     background 0.5s ease;
-  background-color: white;
+  background-color: #efeee9;
 }
 
 header .menu .submenuitem {
@@ -26,6 +30,7 @@ header .menu .submenuitem {
   align-items: center;
   justify-content: center;
   margin-top: 65px;
+  background-color: #efeee9;
 }
 
 .imagenartistas {
@@ -39,14 +44,6 @@ header .menu .submenuitem {
   width: 100%;
   height: auto;
   object-fit: cover;
-}
-
-.tituloartista {
-  position: absolute;
-  width: 250px;
-  top: 0;
-  left: 10px;
-  color: white;
 }
 
 .txtartistas {
@@ -161,16 +158,15 @@ header .menu .submenuitem {
     width: 50vw;
     max-height: 100vh;
     overflow: hidden;
-    z-index: -1;
   }
 
   .imagenartistas img {
     height: 100%;
     width: 100%;
+    min-height: 100vh;
     object-fit: cover;
     border-radius: 0;
     position: relative; /* Añadido */
-    top: -90px; /* Añadido */
   }
 
   .txtartistas {
@@ -191,5 +187,11 @@ header .menu .submenuitem {
 
   .txtartistas p {
     letter-spacing: 0.7px;
+  }
+}
+
+@media screen and (min-width: 1650px) {
+    .imagenartistas img {
+    top: -90px; /* Añadido */
   }
 }
