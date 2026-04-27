@@ -126,6 +126,14 @@ body {
   transform: scale(1.02);
 }
 
+/* VIDEO VERTICAL */
+.video-vertical {
+  width: auto;
+  height: 90vh;
+  display: block;
+  justify-self: center;
+}
+
 /* BOTÓN */
 .contenedor-boton {
   text-align: center;
@@ -256,6 +264,16 @@ body {
   }
 
   .galeria-grid .imagen-grid-ancho {
+    grid-column: 1 / -1;
+  }
+
+  /*Video vertical*/
+  .video-vertical {
+    display: block;
+    margin: auto;
+    height: 100vh;
+    max-width: 100%;
+    object-fit: contain;
     grid-column: 1 / -1;
   }
 

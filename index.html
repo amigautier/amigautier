@@ -21,6 +21,12 @@
     <script defer src="js/header.js"></script>
     <!--Link logos redes sociales-->
     <link rel="stylesheet" href="fonts/icofont.min.css">
+    <!--Bloquear clic derecho-->
+    <script type="text/javascript">
+        document.oncontextmenu = function () {
+            return false;
+        };
+    </script>
 </head>
 
 <body>
@@ -34,8 +40,7 @@
         <!--Banner-->
         <section class="banner_main" id="banner">
             <div class="image_banner">
-                <img src="images/banner/banner.webp"
-                    alt="Editorial photography of artistic makeup in dark blue colors">
+                <img src="images/banner/banner.webp" alt="Editorial photography of artistic makeup in dark blue colors">
             </div>
         </section>
 
@@ -80,8 +85,8 @@
                 </article>
 
                 <article class="tarjeta">
-                    <img src="images/cards/card4.webp"
-                        alt="Fotografía de producto de un perfume en un estanque de agua" class="tarjeta-imagen">
+                    <img src="images/cards/card4.webp" alt="Fotografía de producto de un perfume en un estanque de agua"
+                        class="tarjeta-imagen">
                     <div class="tarjeta-contenido">
                         <p class="tarjeta-texto">Thalassa</p>
                         <a href="works/thalassa?from=index" class="tarjeta-boton">View</a>
@@ -89,7 +94,7 @@
                 </article>
 
                 <article class="tarjeta">
-                    <video class="tarjeta-video" id="tarjeta_imagen" autoplay muted loop playsinline>
+                    <video class="tarjeta-video" id="tarjeta_imagen" autoplay muted loop playsinline poster="images/cards/card5-image.webp">
                         <source src="images/cards/card5.mp4" type="video/mp4">
                     </video>
                     <div class="tarjeta-contenido">
@@ -99,8 +104,8 @@
                 </article>
 
                 <article class="tarjeta">
-                    <img src="images/cards/card6.webp"
-                        alt="Reloj plteado con esfera verde oscuro, en un palo de madera" class="tarjeta-imagen">
+                    <img src="images/cards/card6.webp" alt="Reloj plteado con esfera verde oscuro, en un palo de madera"
+                        class="tarjeta-imagen">
                     <div class="tarjeta-contenido">
                         <p class="tarjeta-texto">Sylvara</p>
                         <a href="works/sylvara?from=index" class="tarjeta-boton">View</a>
@@ -129,8 +134,8 @@
 
                 <article class="tarjeta">
                     <img src="images/cards/card9.webp"
-                        alt="Fotografía editorial de mujer con saco rojo y maquillaje ahumado rojo" class="tarjeta-imagen"
-                        id="tarjeta_imagen">
+                        alt="Fotografía editorial de mujer con saco rojo y maquillaje ahumado rojo"
+                        class="tarjeta-imagen" id="tarjeta_imagen">
                     <div class="tarjeta-contenido">
                         <p class="tarjeta-texto">Evania</p>
                         <a href="works/evania?from=index" class="tarjeta-boton">View</a>
@@ -168,9 +173,8 @@
                 </article>
 
                 <article class="tarjeta">
-                    <img src="images/cards/card15.webp"
-                        alt="Fotografía beauty de mujer con hojas de árbol en el brazo" class="tarjeta-imagen"
-                        id="tarjeta_imagen">
+                    <img src="images/cards/card15.webp" alt="Fotografía beauty de mujer con hojas de árbol en el brazo"
+                        class="tarjeta-imagen" id="tarjeta_imagen">
                     <div class="tarjeta-contenido">
                         <p class="tarjeta-texto">Nerisse</p>
                         <a href="works/nerisse?from=index" class="tarjeta-boton">View</a>
