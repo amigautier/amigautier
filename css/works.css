@@ -255,6 +255,10 @@ body {
     width: 50%;
   }
 
+  .galeria-grid .imagen-grid-ancho {
+    grid-column: 1 / -1;
+  }
+
   /*Footer*/
   .footer-portfolio {
     margin-top: 90px;
