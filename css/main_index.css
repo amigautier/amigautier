@@ -11,7 +11,7 @@ header {
   background: transparent;
 }
 header.headerscroll {
-  background: #ffffff;
+  background: #efeee9;
   transition:
     transform 0.8s ease,
     background 0.5s ease;
@@ -228,7 +228,8 @@ header.headerscroll .redes_sociales1 #ico-gmail {
   }
 
   header:hover {
-    background: #ffffff;
+    background: #efeee9
+;
     transition:
       transform 0.8s ease,
       background 0.5s ease;
