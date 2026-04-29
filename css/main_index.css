@@ -69,38 +69,58 @@ header.headerscroll .redes_sociales1 #ico-gmail {
 }
 
 .titulo_seccion_tarjetas {
-  font-family: NewQueen;
-  margin-top: 80px;
-  margin-bottom: 90px;
-  font-size: 45px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 40px;
+  margin-bottom: 50px;
   color: #ece5c9;
+  text-align: center;
 }
 
-.titulo_seccion_tarjetas .my,
-.titulo_seccion_tarjetas .work {
-  position: relative;
-  display: inline-block;
+/* Texto pequeño */
+
+.titulo_seccion_tarjetas .my {
+  color: #f7f2df;
+  font-size: 0.6rem;
+  letter-spacing: 3px;
+}
+
+.titulo_seccion_tarjetas .categorias a {
+  color: #f7f2df;
   text-decoration: none;
 }
 
-.titulo_seccion_tarjetas .my::before,
-.titulo_seccion_tarjetas .work::after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 180px;
-  height: 1px;
-  background: #ece5c9;
+.titulo_seccion_tarjetas .categorias {
+  font-size: 0.8rem;
+  letter-spacing: 2px;
 }
 
-.titulo_seccion_tarjetas .my::before {
-  top: -10px;
-}
-.titulo_seccion_tarjetas .work::after {
-  bottom: -10px;
+/* Título grande */
+.titulo_seccion_tarjetas .work {
+  color: #f8e5bc;
+  font-size: 1.1rem;
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 30px;
 }
 
+.titulo_seccion_tarjetas .work {
+  position: relative;
+  display: inline-block;
+}
+
+/* Agrega el punto entre elementos */
+.titulo_seccion_tarjetas .categorias {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.titulo_seccion_tarjetas .categorias span:not(:last-child)::after {
+  content: "•";
+  margin-left: 10px;
+}
+
+/*Tarjetas*/
 .contenedor-tarjetas {
   display: grid;
   grid-template-columns: 1fr;
@@ -196,6 +216,23 @@ header.headerscroll .redes_sociales1 #ico-gmail {
   .image_banner img {
     object-position: center top;
   }
+
+  .titulo_seccion_tarjetas {
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+
+  .titulo_seccion_tarjetas .my {
+    font-size: 0.9rem;
+  }
+
+  .titulo_seccion_tarjetas .categorias {
+    font-size: 1.1rem;
+  }
+
+  .titulo_seccion_tarjetas .work {
+    font-size: 3rem;
+  }
 }
 /*Arreglo header*/
 @media (min-width: 1050px) {
@@ -228,8 +265,7 @@ header.headerscroll .redes_sociales1 #ico-gmail {
   }
 
   header:hover {
-    background: #efeee9
-;
+    background: #efeee9;
     transition:
       transform 0.8s ease,
       background 0.5s ease;

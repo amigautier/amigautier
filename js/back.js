@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
             index: "/#tarjetas",
             editorial: "/editorial",
-            producto: "/producto",
+            product: "/product",
         };
 
         window.location.href = rutas[from] || "/";
