@@ -43,11 +43,27 @@ footer .contenedorfooter .redessociales {
 }
 
 footer .contenedorfooter .redessociales p {
-  font-size: 18px;
   padding-top: 8px;
   letter-spacing: 1.5px;
   padding-bottom: 13px;
 }
+
+footer .contenedorfooter .redessociales #gmail{
+  font-size: 19px;
+}
+
+footer .contenedorfooter .redessociales #instagram{
+  font-size: 16px;
+}
+
+footer .contenedorfooter .redessociales #instagram-txt{
+  margin-left: 4px;
+}
+
+footer .contenedorfooter .redessociales #behance{
+  font-size: 19px;
+}
+
 
 footer .contenedorfooter .redessociales a {
   font-family: ParisLPA;
@@ -56,10 +72,6 @@ footer .contenedorfooter .redessociales a {
   font-size: 13px;
   text-decoration: none;
   color: #2b2c2c;
-}
-
-footer .contenedorfooter .redessociales #WhatsApp {
-  font-size: 16px;
 }
 
 footer .contenedorfooter .feedinstagram {
