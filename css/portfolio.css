@@ -5,38 +5,48 @@
   box-sizing: border-box;
 }
 
+body{
+  background-color: #efeee9;
+}
+
+header{
+  border-bottom: solid 1px #dbdad5;;
+}
+footer{
+  border-top: solid 1px #dbdad5;;
+}
 /*Contenedor portfolio*/
 .contenedor_portfolio {
   height: 100%;
   width: 100%;
-  margin-top: 100px;
+  padding-top: 65px;
 }
 
 /*texto leteral fijo*/
-.texto-lateral {
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+.texto-izquierda {
+  font-family: Laika;
   position: fixed;
+  top: 60svh;
   left: 1px;
-  top: 50%;
-  transform: translateY(-50%) rotate(-90deg);
-  transform-origin: left top;
+  writing-mode: vertical-rl;
+  transform: translateY(-50%) rotate(-180deg);
   font-size: 18px;
   letter-spacing: 1px;
   font-weight: bold;
   color: rgb(51, 52, 53);
 }
 
-.texto-izquierda {
+.texto-derecha {
   font-family: "Courier New", Courier, monospace;
   font-style: italic;
   font-weight: 100;
   position: fixed;
-  right: 13px;
-  top: 40%;
-  transform: translateY(-50%) rotate(-90deg);
-  transform-origin: right center;
+  top: 60svh;
+  right: 2px;
+  writing-mode: vertical-rl;
+  transform: translateY(-50%) rotate(180deg);
   font-size: 18px;
-  letter-spacing: 1px;
+  letter-spacing: 0.7px;
   color: rgb(57, 57, 58);
 }
 
@@ -99,7 +109,7 @@
 
 @media (min-width: 1050px) {
   .contenedor_portfolio {
-    margin-top: 180px;
+    padding-top: 150px;
   }
 
   .galeria {
@@ -112,15 +122,13 @@
     font-size: 20px;
   }
 
-  .texto-lateral {
+  .texto-izquierda {
     font-size: 50px;
-    left: 20px;
-    top: 70%;
+    left: 35px;
   }
 
-  .texto-izquierda {
-    right: 50px;
-    top: 50%;
+  .texto-derecha {
     font-size: 27px;
+    right: 55px;
   }
 }
