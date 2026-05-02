@@ -65,7 +65,7 @@ header.headerscroll .redes_sociales1 #ico-gmail {
   background-color: #5e5f58;
   text-align: center;
   justify-items: center;
-  padding-bottom: 100px;
+  padding-bottom: 80px;
 }
 
 .titulo_seccion_tarjetas {
@@ -185,6 +185,60 @@ header.headerscroll .redes_sociales1 #ico-gmail {
   color: #ffe28b;
 }
 
+/*Tarjetas personal*/
+.tarjeta-personal {
+  width: 100%;
+  height: 100%;
+  background-color: #5e5f58;
+  padding-bottom: 80px;
+}
+
+.texto-personal {
+  justify-self: center;
+  width: 75%;
+  margin-bottom: 70px;
+  margin-top: 50px;
+}
+
+.texto-personal a {
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  color: #ece8d7;
+  border-bottom: 1px solid #ece8d7;
+  padding-bottom: 2px;
+  letter-spacing: 1px;
+}
+
+.tarjeta-personal .personal-uno {
+  margin-bottom: 50px;
+}
+
+.texto-personal .titulo-personal {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  color: #f8e5bc;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  margin-left: 8px;
+}
+
+.texto-personal .parrafo-personal {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9rem;
+  color: #ece8d7;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  letter-spacing: 0.3px;
+}
+
+.tarjeta-personal img {
+  width: 100%;
+}
+
 @media (max-width: 315px) {
   .banner_main {
     min-width: 270px;
@@ -206,34 +260,6 @@ header.headerscroll .redes_sociales1 #ico-gmail {
   }
 }
 
-@media (min-width: 1024px) {
-  /*Banner*/
-  .banner_inicio {
-    height: 100vh;
-    background-color: #000;
-  }
-
-  .image_banner img {
-    object-position: center top;
-  }
-
-  .titulo_seccion_tarjetas {
-    margin-top: 80px;
-    margin-bottom: 80px;
-  }
-
-  .titulo_seccion_tarjetas .my {
-    font-size: 0.9rem;
-  }
-
-  .titulo_seccion_tarjetas .categorias {
-    font-size: 1.1rem;
-  }
-
-  .titulo_seccion_tarjetas .work {
-    font-size: 3rem;
-  }
-}
 /*Arreglo header*/
 @media (min-width: 1050px) {
   header .menu .submenuitem {
@@ -288,6 +314,78 @@ header.headerscroll .redes_sociales1 #ico-gmail {
   header:hover .redes_sociales1 #email_txt,
   header:hover .redes_sociales1 #ico-gmail {
     display: block;
+  }
+
+  /*Banner*/
+  .banner_inicio {
+    height: 100vh;
+    background-color: #000;
+  }
+
+  .image_banner img {
+    object-position: center top;
+  }
+
+  .titulo_seccion_tarjetas {
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+
+  .titulo_seccion_tarjetas .my {
+    font-size: 0.9rem;
+  }
+
+  .titulo_seccion_tarjetas .categorias {
+    font-size: 1.1rem;
+  }
+
+  .titulo_seccion_tarjetas .work {
+    font-size: 3rem;
+  }
+
+  /*Tarjeta personal*/
+  .tarjeta-personal {
+    padding-bottom: 100px;
+  }
+
+  .tarjeta-personal .personal-uno {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .tarjeta-personal .personal-dos {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .texto-personal {
+    margin-left: 5%;
+  }
+
+  .tarjeta-personal .personal-uno img {
+    width: 50%;
+    display: block;
+  }
+
+  .texto-personal .parrafo-personal {
+    width: 75%;
+  }
+
+  .texto-personal a {
+    width: 75%;
+  }
+
+  .texto-personal a {
+    display: block;
+    margin: 0;
+    text-decoration: none;
+    border-bottom: none;
+    padding-bottom: 2px;
+    text-align: center;
+    text-decoration: underline;
   }
 }
 

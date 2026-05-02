@@ -7,10 +7,13 @@
       <loc>https://amigautier.pages.dev/editorial</loc>
    </url>
    <url>
-      <loc>https://amigautier.pages.dev/atmospheric</loc>
+      <loc>https://amigautier.pages.dev/product</loc>
    </url>
    <url>
-      <loc>https://amigautier.pages.dev/product</loc>
+      <loc>https://amigautier.pages.dev/ethereal</loc>
+   </url>
+   <url>
+      <loc>https://amigautier.pages.dev/atmospheric</loc>
    </url>
    <url>
       <loc>https://amigautier.pages.dev/about</loc>
@@ -19,39 +22,52 @@
       <loc>https://amigautier.pages.dev/contact</loc>
    </url>
    <url>
-      <loc>https://amigautier.pages.dev/aevum</loc>
+      <loc>https://amigautier.pages.dev/works/aevum</loc>
    </url>
       <url>
-      <loc>https://amigautier.pages.dev/androgina</loc>
+      <loc>https://amigautier.pages.dev/works/androgina</loc>
    </url>
       <url>
-      <loc>https://amigautier.pages.dev/drusila</loc>
+      <loc>https://amigautier.pages.dev/works/drusila</loc>
    </url>
       <url>
-      <loc>https://amigautier.pages.dev/evania</loc>
+      <loc>https://amigautier.pages.dev/works/evania</loc>
    </url>
       <url>
-      <loc>https://amigautier.pages.dev/lumora</loc>
+      <loc>https://amigautier.pages.dev/works/lumora</loc>
    </url>
       <url>
-      <loc>https://amigautier.pages.dev/luneth</loc>
+      <loc>https://amigautier.pages.dev/works/luneth</loc>
    </url>
       <url>
-      <loc>https://amigautier.pages.dev/noctara</loc>
+      <loc>https://amigautier.pages.dev/works/noctara</loc>
    </url>
       <url>
-      <loc>https://amigautier.pages.dev/ravena</loc>
+      <loc>https://amigautier.pages.dev/works/ravena</loc>
    </url>
       <url>
-      <loc>https://amigautier.pages.dev/sylvara</loc>
+      <loc>https://amigautier.pages.dev/works/sylvara</loc>
    </url>
       <url>
-      <loc>https://amigautier.pages.dev/talvyr</loc>
+      <loc>https://amigautier.pages.dev/works/talvyr</loc>
    </url>
       <url>
-      <loc>https://amigautier.pages.dev/thalassa</loc>
+      <loc>https://amigautier.pages.dev/works/thalassa</loc>
    </url>
-      <url>
-      <loc>https://amigautier.pages.dev/velaris</loc>
+   <url>
+      <loc>https://amigautier.pages.dev/works/velaris</loc>
    </url>
+   <url>
+      <loc>https://amigautier.pages.dev/works/nostos</loc>
+   </url>
+   <url>
+      <loc>https://amigautier.pages.dev/works/shallow</loc>
+   </url>
+   <url>
+      <loc>https://amigautier.pages.dev/works/shallow</loc>
+   </url>
+   <url>
+      <loc>https://amigautier.pages.dev/works/thegreen</loc>
+   </url>
+   
 </urlset>
