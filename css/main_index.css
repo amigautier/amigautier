@@ -22,7 +22,7 @@ header {
   height: 100vh;
   overflow: hidden;
   position: relative;
-  padding-top: 65px;
+  margin-top: 50px;
 }
 
 .banner_main .image_banner {
@@ -289,7 +289,7 @@ header {
   }
 
   .textobanner p {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
 
   /*Tarjetas*/
