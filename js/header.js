@@ -1,4 +1,4 @@
-// 1. Lógica del Scroll del Header (Se mantiene igual)
+// 1. Lógica del Scroll del Header
 window.addEventListener("scroll", function () {
     var header = document.querySelector("header");
     var redes_sociales = document.querySelector(".redes_sociales1");
@@ -25,4 +25,25 @@ function myFunction(x) {
     // 'x' es el elemento 'this' que pasas desde el HTML
     x.classList.toggle("change-contenedormenu");
     x.classList.toggle("change");
+}
+
+// 4. Ocultar header
+
+if (document.body.classList.contains("home")) {
+    let lastScrollY = window.scrollY;
+
+    window.addEventListener("scroll", function () {
+        const header = document.querySelector("header");
+        const currentScrollY = window.scrollY;
+
+        if (!header) return;
+
+        if (currentScrollY > lastScrollY && currentScrollY > 50) {
+            header.classList.add("hide-header");
+        } else {
+            header.classList.remove("hide-header");
+        }
+
+        lastScrollY = currentScrollY;
+    });
 }

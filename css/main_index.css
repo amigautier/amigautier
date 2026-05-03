@@ -6,34 +6,12 @@
   box-sizing: border-box;
 }
 
-/*Arreglo header*/
 header {
-  background: transparent;
-}
-header.headerscroll {
-  background: #efeee9;
-  transition:
-    transform 0.8s ease,
-    background 0.5s ease;
-}
-header .logotipo {
-  filter: invert();
-}
-header.headerscroll .logotipo {
-  filter: none;
-}
-.contenedormenu {
-  display: none;
+  transition: transform 0.4s ease;
 }
 
-header.headerscroll .contenedormenu {
-  display: flex;
-}
-header .redes_sociales1 #ico-gmail {
-  display: none;
-}
-header.headerscroll .redes_sociales1 #ico-gmail {
-  display: block;
+.hide-header {
+  transform: translateY(-100%);
 }
 
 /*Device Mode*/
@@ -43,6 +21,8 @@ header.headerscroll .redes_sociales1 #ico-gmail {
   width: 100%;
   height: 100vh;
   overflow: hidden;
+  position: relative;
+  padding-top: 65px;
 }
 
 .banner_main .image_banner {
@@ -56,6 +36,33 @@ header.headerscroll .redes_sociales1 #ico-gmail {
   object-fit: cover;
   object-position: center;
   display: block;
+}
+
+.textobanner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 2;
+  width: 80%;
+}
+
+.textobanner h1 {
+  font-family: Laika;
+  color: #eeece2;
+  font-size: 2rem;
+  line-height: 40px;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+}
+
+.textobanner p {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+  color: #eeece2;
 }
 
 /*Tarjetas*/
@@ -260,63 +267,13 @@ header.headerscroll .redes_sociales1 #ico-gmail {
   }
 }
 
-/*Arreglo header*/
 @media (min-width: 1050px) {
-  header .menu .submenuitem {
-    opacity: 0;
-  }
-
-  header.headerscroll .menu .submenuitem {
-    opacity: 100%;
-  }
-
-  header .redes_sociales a,
-  header .redes_sociales1 #ico-gmail,
-  header .redes_sociales1 #email_txt {
-    display: none;
-  }
-
-  header.headerscroll .redes_sociales a,
-  header.headerscroll .redes_sociales1 #ico-gmail,
-  header.headerscroll .redes_sociales1 #email_txt {
-    display: block;
-  }
-
-  header .contenedor .centrarlogotipo {
-    border-bottom: none;
-  }
-
-  header.headerscroll .contenedor .centrarlogotipo {
-    border-bottom: 1px solid rgb(41, 41, 43);
-  }
-
-  header:hover {
-    background: #efeee9;
-    transition:
-      transform 0.8s ease,
-      background 0.5s ease;
-  }
-
-  header:hover .logotipo {
-    filter: none;
-  }
-
-  header:hover .contenedor .centrarlogotipo {
-    border-bottom: 1px solid rgb(41, 41, 43);
-  }
-
-  header:hover .menu .submenuitem {
-    opacity: 100%;
-  }
-
-  header:hover .redes_sociales a,
-  header:hover .redes_sociales1 #ico-gmail,
-  header:hover .redes_sociales1 #email_txt,
-  header:hover .redes_sociales1 #ico-gmail {
-    display: block;
-  }
-
   /*Banner*/
+  .banner_main {
+    height: 108vh;
+    margin-top: 35px;
+  }
+
   .banner_inicio {
     height: 100vh;
     background-color: #000;
@@ -325,6 +282,17 @@ header.headerscroll .redes_sociales1 #ico-gmail {
   .image_banner img {
     object-position: center top;
   }
+
+  .textobanner h1 {
+    font-size: 3.2rem;
+    margin-bottom: 30px;
+  }
+
+  .textobanner p {
+    font-size: 1.2rem;
+  }
+
+  /*Tarjetas*/
 
   .titulo_seccion_tarjetas {
     margin-top: 80px;

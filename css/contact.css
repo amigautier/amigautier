@@ -8,6 +8,14 @@ body {
   background-color: rgb(224, 224, 216);
 }
 
+header {
+  transition: transform 0.4s ease;
+}
+
+.hide-header {
+  transform: translateY(-100%);
+}
+
 /*Comienzo contacto modo dispositivo*/
 
 /*Texto contacto y mapa modo celular*/
@@ -89,7 +97,6 @@ body {
 
 /*Texto y mapa modo pc*/
 @media screen and (min-width: 1050px) {
-  /*Fin header*/
 
   .contacto .gridcontacto .centrarcontacto .textocontacto {
     margin: 0;
