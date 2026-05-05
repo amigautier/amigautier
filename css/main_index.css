@@ -8,6 +8,7 @@
 
 header {
   transition: transform 0.4s ease;
+  border-bottom: 1px solid #d1d0cc;
 }
 
 .hide-header {
@@ -69,7 +70,7 @@ header {
 .seccion-tarjetas {
   width: 100%;
   padding: 20px;
-  background-color: #5e5f58;
+  background-color: #606256;
   text-align: center;
   justify-items: center;
   padding-bottom: 80px;
