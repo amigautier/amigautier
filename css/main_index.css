@@ -8,7 +8,6 @@
 
 header {
   transition: transform 0.4s ease;
-  border-bottom: 1px solid #d1d0cc;
 }
 
 .hide-header {
@@ -31,6 +30,17 @@ header {
   height: 100%;
 }
 
+.banner_main .image_banner::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.24));
+  z-index: 1;
+}
+
 .banner_main .image_banner img {
   width: 100%;
   height: 100%;
@@ -51,11 +61,11 @@ header {
 
 .textobanner h1 {
   font-family: Laika;
-  color: #eeece2;
+  color: #fcf9ee;
   font-size: 2rem;
   line-height: 40px;
   letter-spacing: 1px;
-  margin-bottom: 30px;
+  margin-bottom: 100px;
 }
 
 .textobanner p {
@@ -63,10 +73,10 @@ header {
   font-size: 1rem;
   line-height: 1.5;
   letter-spacing: 0.5px;
-  color: #eeece2;
+  color: #fcf9ee;
 }
 
-/*Tarjetas*/
+/*Selected artworks*/
 .seccion-tarjetas {
   width: 100%;
   padding: 20px;
@@ -75,31 +85,21 @@ header {
   justify-items: center;
   padding-bottom: 80px;
 }
-
+/*contenedor textos*/
 .titulo_seccion_tarjetas {
   font-family: Arial, Helvetica, sans-serif;
   margin-top: 40px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   color: #ece5c9;
   text-align: center;
+  width: 90%;
 }
 
 /* Texto pequeño */
-
 .titulo_seccion_tarjetas .my {
   color: #f7f2df;
   font-size: 0.6rem;
   letter-spacing: 3px;
-}
-
-.titulo_seccion_tarjetas .categorias a {
-  color: #f7f2df;
-  text-decoration: none;
-}
-
-.titulo_seccion_tarjetas .categorias {
-  font-size: 0.8rem;
-  letter-spacing: 2px;
 }
 
 /* Título grande */
@@ -108,7 +108,7 @@ header {
   font-size: 1.1rem;
   display: block;
   margin-top: 15px;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 
 .titulo_seccion_tarjetas .work {
@@ -116,14 +116,25 @@ header {
   display: inline-block;
 }
 
+/*parrafo y categorias*/
+.titulo_seccion_tarjetas .categorias, .titulo_seccion_tarjetas .categorias2 a{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+  color: #ece8d7;
+  line-height: 1.6;
+  text-decoration: none;
+}
+
 /* Agrega el punto entre elementos */
-.titulo_seccion_tarjetas .categorias {
+.titulo_seccion_tarjetas .categorias2{
   display: flex;
   justify-content: center;
   gap: 10px;
+  font-weight: bold;
+  margin-top: 20px;
 }
 
-.titulo_seccion_tarjetas .categorias span:not(:last-child)::after {
+.titulo_seccion_tarjetas .categorias2 span:not(:last-child)::after {
   content: "•";
   margin-left: 10px;
 }
@@ -272,7 +283,6 @@ header {
   /*Banner*/
   .banner_main {
     height: 108vh;
-    margin-top: 35px;
   }
 
   .banner_inicio {
@@ -286,7 +296,7 @@ header {
 
   .textobanner h1 {
     font-size: 3.2rem;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
 
   .textobanner p {
@@ -304,12 +314,18 @@ header {
     font-size: 0.9rem;
   }
 
-  .titulo_seccion_tarjetas .categorias {
+  .titulo_seccion_tarjetas .work {
+    font-size: 3rem;
+    margin-bottom: 30px;
+  }
+
+   .titulo_seccion_tarjetas .categorias {
     font-size: 1.1rem;
   }
 
-  .titulo_seccion_tarjetas .work {
-    font-size: 3rem;
+  .titulo_seccion_tarjetas .categorias2 {
+    font-size: 1.1rem;
+    margin-top: 30px;
   }
 
   /*Tarjeta personal*/

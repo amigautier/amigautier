@@ -6,15 +6,9 @@
 }
 
 body{
-  background-color: #efeee9;
+  background-color: #fcf9ee;
 }
 
-header{
-  border-bottom: solid 1px #dbdad5;;
-}
-footer{
-  border-top: solid 1px #dbdad5;;
-}
 /*Contenedor portfolio*/
 .contenedor_portfolio {
   height: 100%;
@@ -26,7 +20,7 @@ footer{
 .texto-izquierda {
   font-family: Laika;
   position: fixed;
-  top: 60svh;
+  top: 50svh;
   left: 1px;
   writing-mode: vertical-rl;
   transform: translateY(-50%) rotate(-180deg);
@@ -41,7 +35,7 @@ footer{
   font-style: italic;
   font-weight: 100;
   position: fixed;
-  top: 60svh;
+  top: 50svh;
   right: 2px;
   writing-mode: vertical-rl;
   transform: translateY(-50%) rotate(180deg);

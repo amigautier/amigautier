@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: rgb(224, 224, 216);
+  background-color: #fcf9ee;
 }
 
 header {
@@ -18,93 +18,211 @@ header {
 
 /*Comienzo contacto modo dispositivo*/
 
-/*Texto contacto y mapa modo celular*/
-.contacto {
-  width: 100%;
-  height: 80vh;
+/*Formulario*/
+.contact-section {
   display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.contacto .gridcontacto {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
-  overflow: hidden;
-  width: 100%;
+  min-height: 100vh;
+  margin-top: 65px;
 }
 
-.contacto .gridcontacto .centrarcontacto {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.contact-image {
+  width: 100%;
+  height: 400px;
+}
+
+.contact-image img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
-.contacto .gridcontacto .centrarcontacto .textocontacto {
-  text-align: justify;
-  width: 94%;
-  max-width: 500px;
-  border-radius: 35px;
-  color: rgb(52, 53, 54);
-  margin: 3%;
-  padding-top: 4%;
-  padding-bottom: 8%;
+.contact-content {
+  padding: 40px 24px;
 }
 
-.textocontacto h1 {
-  font-family: Laika;
-  font-size: 30px;
-  letter-spacing: 4px;
-  text-transform: uppercase;
-  font-style: normal;
-  font-weight: normal;
-  text-align: center;
-  padding-top: 30px;
+.contact-form {
+  width: 100%;
 }
 
-.textocontacto a {
+.contact-form h1 {
   font-family: NewQueen;
-  font-size: 15px;
-  text-decoration: none;
-  color: rgb(67, 67, 67);
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 32px;
+  color: #6b6a3b;
+  letter-spacing: -0.03em;
 }
 
-.textocontacto p {
-  margin-top: 10px;
-  text-align: center;
-  padding-top: 10px;
-  font-size: 16px;
+.name-row {
+  display: flex;
+  gap: 16px;
+}
+
+.name-row .input-group {
+  flex: 1;
+}
+
+.input-group {
+  margin-bottom: 16px;
+}
+
+.input-group label {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  display: block;
+  margin-bottom: 5px;
+  font-size: 0.9rem;
+  color: #6b6a3b;
+  letter-spacing: 0.02em;
+}
+
+.contact-form input,
+.contact-form textarea {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  width: 100%;
+  border: 1px solid #adaa8b;
+  background: transparent;
+  color: rgb(66, 67, 68);
+  font-size: 0.95rem;
+  padding: 16px 18px;
+  border-radius: 30px;
+  outline: none;
+  transition: 0.25s ease;
+}
+
+.input-group label span {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #aba98a;
+  font-size: 0.8rem;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #888888;
+}
+
+.contact-form textarea {
+  min-height: 110px;
+  resize: vertical;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #888888;
+}
+
+.contact-form button {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  width: 100px;
+  border: 1px solid #6b6a3b;
+  color: #6b6a3b;
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 18px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.25s ease;
+  background: none;
+}
+
+.contact-form button:hover {
+  opacity: 0.9;
+}
+
+/* Estilo base para la cajita de respuesta */
+.hidden {
+  display: none !important;
+}
+#formResponse {
+  width: fit-content;
+  margin-top: 20px;
+  padding: 12px 16px;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-weight: 500;
   line-height: 1.4;
+  text-align: center;
+  transition: all 0.3s ease;
 }
 
+/* 1. Estado: Enviando (Azul / Informativo) */
+#formResponse.message-info {
+  background-color: #555a34;
+  color: #f7efe4;
+  border-radius: 30px;
+}
+
+/* 2. Estado: Éxito (Verde / Logrado) */
+#formResponse.message-success {
+  background-color: #6f7549;
+  color: #f7efe4;
+  border-radius: 30px;
+}
+
+/* 3. Estado: Error (Rojo / Falló) */
+#formResponse.message-error {
+  background-color: #d35746;
+  color: #f8f4ec;
+  border-radius: 30px;
+}
+
+/* Clase auxiliar para asegurarse de que no ocupe espacio si está oculto */
+#formResponse.hidden {
+  display: none;
+}
 /*Fin contacto modo dispositivo*/
 
 @media (max-width: 315px) {
-  .contacto {
+  .contact-section {
     min-width: 270px;
-  }
-  .contacto .gridcontacto .centrarcontacto .textocontacto {
-    width: 100%;
-  }
-  .textocontacto a {
-    font-size: 12px;
   }
 }
 
 /*Texto y mapa modo pc*/
-@media screen and (min-width: 1050px) {
-
-  .contacto .gridcontacto .centrarcontacto .textocontacto {
-    margin: 0;
-    width: 280px;
-    box-shadow: none;
+@media screen and (min-width: 760px) {
+  body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
   }
 
-  .textocontacto #whatsuno {
-    font-size: 15px;
+  main {
+    flex: 1;
+  }
+  /*Formulario*/
+  .contact-section {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 1240px;
+    min-height: auto;
+    max-height: 1080px;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    gap: 50px;
+    padding: 0 20px;
+  }
+
+  .contact-image {
+    flex: 1;
+    height: 640px;
+    max-width: 580px;
+  }
+
+  .contact-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .contact-content {
+    flex: 1;
+    padding: 0;
+    max-width: 500px;
+    margin-left: auto;
   }
 }

@@ -12,7 +12,8 @@
     <!--favicon buscador-->
     <link rel="shortcut icon" href="images/logotipo/favicon.png">
     <!--Description-->
-    <meta name="description" content="Contact Ami Gautier for editorial, beauty and product photography. Email: amigautier@gmail.com" />
+    <meta name="description"
+        content="Contact Ami Gautier for editorial, beauty and product photography. Email: amigautier@gmail.com" />
     <!--Keywords-->
     <meta name="keywords" content="Contact photographer Ami Gautier" />
     <!--Hoja de estilos-->
@@ -39,30 +40,69 @@
 
     <!--Main-->
     <main>
-        <div class="contacto">
-            <div class="gridcontacto">
-                <div class="centrarcontacto">
-                    <div class="textocontacto">
-                        <h1>Contact</h1>
+        <!--Formulario-->
+        <section class="contact-section">
 
-                        <p class="icofont-email" style="font-size: 19px" id="1">
-                            <a href="mailto:info.amigautier@gmail.com" target="blank">
-                                info.amigautier@gmail.com</a>
-                        </p>
-                        <p class="icofont-instagram" id="1">
-                            <a href="http://www.instagram.com/amigautier" target="blank" id="1">
-                                Instagram.com/amigautier</a>
-                        </p>
-                        <p class="icofont-behance" style="font-size: 22px;">
-                            <a href="http://www.behance.com/amigautier" target="blank" id="1">
-                                behance.com/amigautier</a>
-                        </p>
+            <div class="contact-image">
+                <img src="images/about/about-1.jpg" alt="Contact image">
+            </div>
+
+            <div class="contact-content">
+
+                <form class="contact-form" id="contactForm">
+
+                    <h1>Let’s connect ⸙</h1>
+
+                    <div class="name-row">
+
+                        <div class="input-group">
+                            <label for="firstName">
+                                First Name
+                            </label>
+                            <input type="text" name="firstName" required maxlength="20">
+                        </div>
+
+                        <div class="input-group">
+                            <label for="lastName">
+                                Last Name
+                            </label>
+                            <input type="text" name="lastName" required maxlength="20">
+                        </div>
 
                     </div>
-                </div>
+
+                    <div class="input-group">
+                        <label for="email">
+                            Email <span>(required)</span>
+                        </label>
+                        <input type="email" name="email" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="subject">
+                            Subject
+                        </label>
+                        <input type="text" name="subject" required maxlength="100">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="Message">
+                            Message <span>(required)</span>
+                        </label>
+                        <textarea name="message" required maxlength="1000"></textarea>
+                    </div>
+
+                    <button type="submit">
+                        Submit
+                    </button>
+
+                    <div id="formResponse" class="hidden"></div>
+
+                </form>
 
             </div>
-        </div>
+
+        </section>
     </main>
 
     <!--Footer-->
@@ -75,6 +115,7 @@
     <script src="js/date.js"></script>
     <script src="includes.js"></script>
     <script src="js/header.js"></script>
+    <script src="js/contact.js"></script>
 
 </body>
 

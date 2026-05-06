@@ -2,12 +2,13 @@
 footer {
   font-weight: 600;
   font-style: normal;
-  background: #efeee9;
+  background: #fcf9ee;
   color: #2b2c2c;
   position: relative;
   width: 100%;
   padding-top: 50px;
   padding-bottom: 20px;
+  border-top: solid 1px #dbdad5;
 }
 
 footer .contenedorfooter {
@@ -48,22 +49,21 @@ footer .contenedorfooter .redessociales p {
   padding-bottom: 13px;
 }
 
-footer .contenedorfooter .redessociales #gmail{
+footer .contenedorfooter .redessociales #gmail {
   font-size: 19px;
 }
 
-footer .contenedorfooter .redessociales #instagram{
+footer .contenedorfooter .redessociales #instagram {
   font-size: 16px;
 }
 
-footer .contenedorfooter .redessociales #instagram-txt{
+footer .contenedorfooter .redessociales #instagram-txt {
   margin-left: 4px;
 }
 
-footer .contenedorfooter .redessociales #behance{
+footer .contenedorfooter .redessociales #behance {
   font-size: 19px;
 }
-
 
 footer .contenedorfooter .redessociales a {
   font-family: ParisLPA;

@@ -4,18 +4,18 @@
   box-sizing: border-box;
 }
 
-header{
-  border-bottom: 1px solid #d1d0cc;
+footer{
+  border-top: none;
 }
 
 /*Comienzo grid scroll fotos 2*/
 
 .contenedor_atmospheric{
-  background-color: #efeee9;
+  background-color: #fcf9ee;
 }
 
 .carrusel_scroll {
-  background-color: #efeee9;
+  background-color: #fcf9ee;
   height: 80vh;
   display: flex;
   justify-content: center;
