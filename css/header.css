@@ -60,7 +60,7 @@ header .contenedor {
   width: 100%;
   padding-bottom: 5px;
   margin: auto;
-  border-bottom: 1px solid rgb(200, 202, 197);
+  /*border-bottom: 1px solid rgb(200, 202, 197);*/
 }
 
 .centrarlogotipo .logotipo {
