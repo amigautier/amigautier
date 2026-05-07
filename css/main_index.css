@@ -76,6 +76,86 @@ header {
   color: #fcf9ee;
 }
 
+/*Offering*/
+.offerings {
+  background-color: #fcf9ee;
+  padding: 30px 12px;
+}
+
+.offerings-container {
+  margin: 0 auto;
+}
+
+.offerings-title {
+  font-family: Laika;
+  letter-spacing: 0.5px;
+  color: #272725;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 100;
+  margin-bottom: 70px;
+}
+
+.offerings-gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.offering-card {
+  width: 100%;
+  text-align: center;
+}
+
+.offering-card img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.txt-offerings-card {
+  width: 70%;
+  justify-self: center;
+}
+
+.offering-card h3 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.2rem;
+  letter-spacing: 0.5px;
+  color: #272725;
+  text-align: center;
+  font-weight: 100;
+  margin-bottom: 12px;
+}
+
+.offering-card p {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 0.9rem;
+  letter-spacing: 0.2px;
+  color: #272725;
+  text-align: center;
+  font-weight: 100;
+  margin-bottom: 20px;
+}
+
+.offering-btn {
+  display: block;
+  width: fit-content;
+  margin: 50px auto 0;
+  padding: 20px 25px;
+  border: 1px solid #272725;
+  border-radius: 40px;
+  text-decoration: none;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1rem;
+  color: #272725;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
 /*Selected artworks*/
 .seccion-tarjetas {
   width: 100%;
@@ -85,7 +165,7 @@ header {
   justify-items: center;
   padding-bottom: 80px;
 }
-/*contenedor textos*/
+/*Text container*/
 .titulo_seccion_tarjetas {
   font-family: Arial, Helvetica, sans-serif;
   margin-top: 40px;
@@ -95,14 +175,14 @@ header {
   width: 90%;
 }
 
-/* Texto pequeño */
+/*Small text */
 .titulo_seccion_tarjetas .my {
   color: #f7f2df;
   font-size: 0.6rem;
   letter-spacing: 3px;
 }
 
-/* Título grande */
+/*Large title*/
 .titulo_seccion_tarjetas .work {
   color: #f8e5bc;
   font-size: 1.1rem;
@@ -116,8 +196,9 @@ header {
   display: inline-block;
 }
 
-/*parrafo y categorias*/
-.titulo_seccion_tarjetas .categorias, .titulo_seccion_tarjetas .categorias2 a{
+/*Paragraph and categories*/
+.titulo_seccion_tarjetas .categorias,
+.titulo_seccion_tarjetas .categorias2 a {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 0.8rem;
   color: #ece8d7;
@@ -125,8 +206,8 @@ header {
   text-decoration: none;
 }
 
-/* Agrega el punto entre elementos */
-.titulo_seccion_tarjetas .categorias2{
+/*Add the period between elements*/
+.titulo_seccion_tarjetas .categorias2 {
   display: flex;
   justify-content: center;
   gap: 10px;
@@ -139,7 +220,7 @@ header {
   margin-left: 10px;
 }
 
-/*Tarjetas*/
+/*Cards*/
 .contenedor-tarjetas {
   display: grid;
   grid-template-columns: 1fr;
@@ -204,11 +285,16 @@ header {
   color: #ffe28b;
 }
 
-/*Tarjetas personal*/
+/*Personal cards*/
+.content-personal-art {
+  width: 100%;
+  background-color: #606256;
+}
 .tarjeta-personal {
+  justify-self: center;
+  max-width: 1920px;
   width: 100%;
   height: 100%;
-  background-color: #5e5f58;
   padding-bottom: 80px;
 }
 
@@ -265,17 +351,98 @@ header {
   .seccion-tarjetas {
     min-width: 270px;
   }
+
+  .offerings {
+    min-width: 270px;
+  }
 }
 
 /*Pc Mode*/
+
 @media (min-width: 760px) {
-  /*Tarjetas*/
+  /*Cards*/
   .contenedor-tarjetas {
     grid-template-columns: repeat(3, 1fr);
   }
 
   .tarjeta {
     aspect-ratio: 4 / 4.5;
+  }
+}
+
+@media (min-width: 600px) {
+  /*Offering*/
+  .offerings-gallery {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+  }
+
+  .offering-card {
+    flex: 0 1 calc(50% - 20px);
+    max-width: none;
+  }
+
+  .offering-card img {
+    height: 35vw;
+  }
+}
+
+@media (min-width: 764px) {
+  /*Offering*/
+  .offerings {
+    padding: 4vw;
+  }
+
+  .offerings-title {
+    font-size: 2.5rem;
+  }
+
+  .offering-card h3 {
+    font-size: 1.3rem;
+    margin-top: 2vw;
+    margin-bottom: 1vw;
+  }
+
+  .offering-card p {
+    font-size: 1rem;
+  }
+
+  .offerings-gallery {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 60px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .offering-card {
+    flex: 1 1 calc(33.333% - 40px);
+    max-width: none;
+  }
+
+  .offering-card img {
+    width: 100%;
+    height: 23vw;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  .txt-offerings-card {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .offering-btn {
+    font-size: 1.1rem;
+  }
+
+  .offering-btn:hover {
+    color: #fcf9ee;
+    background-color: #6b6a3b;
   }
 }
 
@@ -303,8 +470,7 @@ header {
     font-size: 1.4rem;
   }
 
-  /*Tarjetas*/
-
+  /*Cards*/
   .titulo_seccion_tarjetas {
     margin-top: 80px;
     margin-bottom: 80px;
@@ -319,7 +485,7 @@ header {
     margin-bottom: 30px;
   }
 
-   .titulo_seccion_tarjetas .categorias {
+  .titulo_seccion_tarjetas .categorias {
     font-size: 1.1rem;
   }
 
@@ -328,7 +494,7 @@ header {
     margin-top: 30px;
   }
 
-  /*Tarjeta personal*/
+  /*Personal cards*/
   .tarjeta-personal {
     padding-bottom: 100px;
   }
@@ -375,7 +541,7 @@ header {
 }
 
 @media (min-width: 1300px) {
-  /*Tarjeta*/
+  /*Cards*/
   .tarjeta {
     aspect-ratio: 4 / 3.5;
   }
