@@ -49,10 +49,10 @@ header {
   font-size: 30px;
   color: #6b6a3b;
   letter-spacing: 4px;
-  text-transform: uppercase;
   font-style: normal;
   font-weight: normal;
   margin-top: 15px;
+  text-align: left;
 }
 
 .parrafo-artista {
@@ -232,20 +232,20 @@ header {
   width: fit-content;
   margin: 50px auto 0;
   padding: 20px 25px;
-  border: 1px solid #fcf9ee;
+  background-color: #fcf9ee;
   border-radius: 40px;
   text-decoration: none;
   font-family: "Times New Roman", Times, serif;
   font-size: 1rem;
-  color: #fcf9ee;
+  color: #272725;
   letter-spacing: 0.5px;
   transition: all 0.3s ease;
   cursor: pointer;
 }
 
 .offering-btn:hover{
-  color: #272725;
-  background-color: #fcf9ee;
+  color: #fcf9ee;
+  background-color: #bd9868;
 }
 
 @media (max-width: 315px) {
