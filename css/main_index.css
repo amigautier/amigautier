@@ -388,7 +388,7 @@ header {
 
 .about__title {
   font-family: "Times New Roman", Times, serif;
-  font-size: 2.2rem;
+  font-size: 1.8rem;
   letter-spacing: 0.5px;
   font-weight: 100;
   margin-bottom: 1rem;
@@ -397,7 +397,7 @@ header {
 
 .about__text {
   font-family: "Times New Roman", Times, serif;
-  font-size: 1.2rem;
+  font-size: 0.9rem;
   line-height: 1.7;
   letter-spacing: 0.2px;
   color: #6b6a3b;
