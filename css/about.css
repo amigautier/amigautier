@@ -4,25 +4,16 @@
   box-sizing: border-box;
 }
 
-body{
+body {
   background-color: #fcf9ee;
 }
 
-header{
-  background: transparent;
-  border-bottom: none;
+header {
+  transition: transform 0.4s ease;
 }
 
-header:hover {
-  transition:
-    transform 0.8s ease,
-    background 0.5s ease;
-  background-color: #fcf9ee;
-  border-bottom: 1px solid #d1d0cc;
-}
-
-header .menu .submenuitem {
-  opacity: 100%;
+.hide-header {
+  transform: translateY(-100%);
 }
 /*Diseño en modo dispositivo*/
 
@@ -31,7 +22,7 @@ header .menu .submenuitem {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 65px;
+  margin-top: 30px;
   background-color: #fcf9ee;
 }
 
@@ -49,28 +40,25 @@ header .menu .submenuitem {
 }
 
 .txtartistas {
-  width: 95%;
+  width: 100%;
   text-align: justify;
-  margin: 3%;
 }
 
 .txtartistas h2 {
   font-family: Laika;
-  font-size: 35px;
-  color: rgb(52, 52, 53);
-  text-align: center;
+  font-size: 30px;
+  color: #6b6a3b;
   letter-spacing: 4px;
   text-transform: uppercase;
   font-style: normal;
   font-weight: normal;
-  margin-bottom: 25px;
   margin-top: 15px;
 }
 
-.txtartistas p {
+.parrafo-artista {
   font-family: NewQueen;
   font-size: 15px;
-  color: rgb(52, 52, 53);
+  color: #6b6a3b;
 }
 
 .txtartistascotenido {
@@ -80,7 +68,15 @@ header .menu .submenuitem {
   padding-bottom: 8%;
   padding-left: 25px;
   padding-right: 25px;
-  color: rgb(52, 52, 53);
+  color: #6b6a3b;
+}
+
+.sub-txtartista {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-style: italic;
+  font-size: 14px;
+  margin-bottom: 30px;
+  color: #6b6a3b;
 }
 
 .textocontactoartista {
@@ -92,7 +88,7 @@ header .menu .submenuitem {
 .textocontactoartista a {
   font-family: NewQueen;
   text-decoration: none;
-  color: rgb(67, 67, 67);
+  color: #6b6a3b;
   font-size: 16px;
 }
 
@@ -102,6 +98,154 @@ header .menu .submenuitem {
   padding-top: 3%;
   font-size: 16px;
   line-height: 1.4;
+}
+
+/*Services*/
+.services {
+  width: 100%;
+  background-color: #6b6a3b;
+  padding-bottom: 110px;
+}
+
+.tittle-services,
+.clients {
+  padding-top: 100px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+.tittle-services h1,
+.clients h1 {
+  font-family: NewQueen;
+  font-size: 28px;
+  font-weight: normal;
+  letter-spacing: 1px;
+  color: #f6f9ee;
+}
+
+.content-services {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  justify-self: center;
+}
+
+/* Tarjeta */
+.service-card {
+  border-bottom: 1px solid #f6f9ee;
+  overflow: hidden;
+  transition: all 0.35s ease;
+}
+
+/* Solo la primera lleva línea arriba */
+.service-card:first-child {
+  border-top: 1px solid #f6f9ee;
+}
+
+/* Cabecera */
+.service-card summary {
+  list-style: none;
+  cursor: pointer;
+  padding: 15px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 17px;
+  letter-spacing: 1px;
+  color: #f6f9ee;
+  user-select: none;
+}
+
+/* quitar marcador default */
+.service-card summary::-webkit-details-marker {
+  display: none;
+}
+
+/* Icono + */
+.service-card summary::after {
+  content: "+";
+  font-size: 28px;
+  font-weight: 300;
+  transition: transform 0.35s ease;
+  line-height: 1;
+}
+
+/* cambia a X visual al abrir */
+.service-card[open] summary::after {
+  transform: rotate(45deg);
+}
+
+/* Contenido oculto/visible */
+.service-description {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.35s ease;
+}
+
+.service-card[open] .service-description {
+  grid-template-rows: 1fr;
+}
+
+.service-description p {
+  overflow: hidden;
+  padding-left: 22px;
+  padding-right: 22px;
+  padding-bottom: 22px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 15px;
+  line-height: 1.7;
+  color: #f6f9ee;
+}
+
+/*clients*/
+.clients {
+  text-align: center;
+  padding: 40px 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.clients h1 {
+  margin-top: 50px;
+  margin-bottom: 60px;
+}
+
+.logotype-clients {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.logotype-clients img {
+  width: calc(50% - 20px);
+  max-height: 70px;
+  object-fit: contain;
+  display: block;
+}
+
+/*Btn*/
+.offering-btn {
+  display: block;
+  width: fit-content;
+  margin: 50px auto 0;
+  padding: 20px 25px;
+  border: 1px solid #fcf9ee;
+  border-radius: 40px;
+  text-decoration: none;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1rem;
+  color: #fcf9ee;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.offering-btn:hover{
+  color: #272725;
+  background-color: #fcf9ee;
 }
 
 @media (max-width: 315px) {
@@ -121,44 +265,21 @@ header .menu .submenuitem {
 /*Diseño en modo pc*/
 
 @media screen and (min-width: 1050px) {
-  /*Arreglo header*/
-   header .contenedor .centrarlogotipo {
-    border-bottom: none;
-  }
-   header:hover .contenedor .centrarlogotipo {
-    border-bottom: 1px solid rgb(41, 41, 43);
-  }
-
-  header .menu .submenuitem {
-    opacity: 0;
-  }
-
-  header:hover .menu .submenuitem {
-    opacity: 100%;
-  }
-
-  header .redes_sociales a {
-    display: none;
-  }
-
-  header:hover .redes_sociales a {
-    display: block;
-  }
-
   /*Fin arreglo header*/
 
   .contenedorartistas {
     flex-direction: row;
     margin-top: 0px;
     max-height: 100vh;
+    overflow: hidden;
   }
 
   .imagenartistas {
-    position: relative;
-    top: 0;
-    left: 0;
     width: 50vw;
     max-height: 100vh;
+    position: sticky;
+    top: 0;
+    flex-shrink: 0;
     overflow: hidden;
   }
 
@@ -169,31 +290,71 @@ header .menu .submenuitem {
     object-fit: cover;
     border-radius: 0;
     position: relative; /* Añadido */
+    padding-top: 90px;
   }
 
   .txtartistas {
     width: 50vw;
-    height: 100%;
+    height: 100vh;
+    overflow-y: auto;
     margin: auto;
-    padding-left: 50px;
-    padding-right: 50px;
-    text-align: justify;
-    overflow-x: hidden;
-    background-color: rgba(244, 246, 247, 0);
-    box-shadow: none;
   }
 
   .txtartistas h2 {
     text-align: left;
+    padding-top: 180px;
   }
 
   .txtartistas p {
     letter-spacing: 0.7px;
   }
+
+  .services {
+    margin-top: 80px;
+    padding-bottom: 150px;
+  }
+
+  .tittle-services h1,
+  .clients h1 {
+    font-size: 32px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+
+  .clients h1 {
+    margin-top: 100px;
+    margin-bottom: 80px;
+  }
+
+  .service-card summary {
+    font-size: 18px;
+    padding: 22px 25px;
+  }
+
+  .service-description p {
+    font-size: 16px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 25px;
+  }
+
+  .clients {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .logotype-clients {
+    gap: 50px;
+  }
+
+  .logotype-clients img {
+    width: calc(25% - 50px);
+    max-height: 90px;
+  }
 }
 
 @media screen and (min-width: 1650px) {
-    .imagenartistas img {
+  .imagenartistas img {
     top: -90px; /* Añadido */
   }
 }

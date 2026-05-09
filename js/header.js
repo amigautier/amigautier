@@ -47,3 +47,22 @@ if (document.body.classList.contains("home")) {
         lastScrollY = currentScrollY;
     });
 }
+// 5. Ocultar header about
+if (document.getElementById("home")) {
+    let lastScrollY = 0;
+
+    document.getElementById("home").addEventListener("scroll", function () {
+        const header = document.querySelector("header");
+        const currentScrollY = this.scrollTop;
+
+        if (!header) return;
+
+        if (currentScrollY > lastScrollY && currentScrollY > 50) {
+            header.classList.add("hide-header");
+        } else {
+            header.classList.remove("hide-header");
+        }
+
+        lastScrollY = currentScrollY;
+    });
+}

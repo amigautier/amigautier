@@ -140,7 +140,8 @@ header {
   margin-bottom: 20px;
 }
 
-.offering-btn {
+.offering-btn,
+.about__button {
   display: block;
   width: fit-content;
   margin: 50px auto 0;
@@ -154,6 +155,12 @@ header {
   letter-spacing: 0.5px;
   transition: all 0.3s ease;
   cursor: pointer;
+}
+
+.offering-btn:hover,
+.about__button:hover {
+  color: #fcf9ee;
+  background-color: #6b6a3b;
 }
 
 /*Selected artworks*/
@@ -295,7 +302,7 @@ header {
   max-width: 1920px;
   width: 100%;
   height: 100%;
-  padding-bottom: 80px;
+  padding-bottom: 5px;
 }
 
 .texto-personal {
@@ -344,6 +351,67 @@ header {
   width: 100%;
 }
 
+/*About*/
+.about {
+  padding: 2rem 1.5rem;
+  background-color: #fcf9ee;
+}
+
+.about__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin: 0 auto;
+}
+
+/* Imagen responsive */
+.about__image-box {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.about__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Contenido */
+.about__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.about__title {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 2.2rem;
+  letter-spacing: 0.5px;
+  font-weight: 100;
+  margin-bottom: 1rem;
+  color: #6b6a3b;
+}
+
+.about__text {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.2rem;
+  line-height: 1.7;
+  letter-spacing: 0.2px;
+  color: #6b6a3b;
+  font-weight: 100;
+  margin-bottom: 1.5rem;
+}
+
+.about__button {
+  color: #6b6a3b;
+  margin-top: 50px;
+  margin-left: 0;
+  border: 1px solid #6b6a3b;
+}
+
 @media (max-width: 315px) {
   .banner_main {
     min-width: 270px;
@@ -358,18 +426,6 @@ header {
 }
 
 /*Pc Mode*/
-
-@media (min-width: 760px) {
-  /*Cards*/
-  .contenedor-tarjetas {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .tarjeta {
-    aspect-ratio: 4 / 4.5;
-  }
-}
-
 @media (min-width: 600px) {
   /*Offering*/
   .offerings-gallery {
@@ -386,6 +442,54 @@ header {
 
   .offering-card img {
     height: 35vw;
+  }
+
+  .offering-btn,
+  .about__button {
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 760px) {
+  /*Cards*/
+  .contenedor-tarjetas {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .tarjeta {
+    aspect-ratio: 4 / 4.5;
+  }
+
+  /*About*/
+  .about {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .about__container {
+    flex-direction: row;
+    gap: 5rem;
+    max-width: 1150px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .about__image-box {
+    flex: 1;
+    max-width: 500px;
+  }
+
+  .about__content {
+    flex: 1;
+  }
+
+  .about__title {
+    font-size: 3rem;
+  }
+
+  .about__text {
+    max-width: 400px;
+    font-size: 1.2rem;
   }
 }
 
@@ -434,15 +538,6 @@ header {
   .txt-offerings-card {
     width: 80%;
     margin: 0 auto;
-  }
-
-  .offering-btn {
-    font-size: 1.1rem;
-  }
-
-  .offering-btn:hover {
-    color: #fcf9ee;
-    background-color: #6b6a3b;
   }
 }
 
